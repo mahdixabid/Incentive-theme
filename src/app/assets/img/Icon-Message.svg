@@ -1,0 +1,17 @@
+<svg id="Icon_Message" data-name="Icon/Message" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M2,16a2.006,2.006,0,0,1-2-2L.01,2A2,2,0,0,1,2,0H18a2.006,2.006,0,0,1,2,2V14a2.006,2.006,0,0,1-2,2Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <rect id="Base" width="24" height="24" fill="none"/>
+  <g id="Mask_Group_17" data-name="Mask Group 17" transform="translate(2 4)" clip-path="url(#clip-path)">
+    <g id="Symbols">
+      <g id="Icon_Message-2" data-name="Icon/Message">
+        <g id="Shape-2" data-name="Shape">
+          <path id="Path_10" data-name="Path 10" d="M20,4H4A2,2,0,0,0,2.01,6L2,18a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V6a2.006,2.006,0,0,0-2-2Zm0,4-8,5L4,8V6l8,5,8-5Z" transform="translate(-2 -4)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+#Block_08 {
+    padding-top: 8.51vw;
+    padding-bottom: 8.51vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url();
+    position: relative;
+
+    & .bk_block {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        object-fit: cover;
+    }
+
+    & .left_block {
+        z-index: 2;
+        gap: 5.56vw;
+
+        & .block_title {
+            max-width: 22.22vw;
+        }
+
+        & .block_description {
+            max-width: 32.22vw;
+
+            & .light_btn {
+                & img {
+                    width: 2.43vw;
+                }
+            }
+        }
+    }
+
+
+
+    & .block_element {
+        display: flex;
+        flex: 1;
+    }
+
+}

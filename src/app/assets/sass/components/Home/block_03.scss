@@ -1,0 +1,20 @@
+#Block_03 {
+    padding-top: 5.9vw;
+    justify-content: space-between;
+    align-items: center;
+
+    & div {
+        flex: 1;
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        padding-top: 10vw !important;
+        padding-bottom: 10vw !important;
+        flex-direction: column !important;
+    }
+}

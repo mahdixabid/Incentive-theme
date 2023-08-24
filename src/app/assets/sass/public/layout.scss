@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+
+img {
+  max-width: unset;
+}
+
+.page-header .entry-title,
+.site-footer .footer-inner,
+.site-footer:not(.dynamic-footer),
+.site-header .header-inner,
+.site-header:not(.dynamic-header),
+body:not([class*=elementor-page-]) .site-main,
+.elementor-section.elementor-section-boxed>.elementor-container {
+  max-width: unset !important;
+}
+
+.entry-title {
+  display: none !important;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  padding: unset !important;
+}
+
+body {
+  // font-family: 'Poppins', sans-serif;
+  background-color: #F4F4F4;
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: unset !important;
+  color: unset;
+}
+
+strong {
+  font-weight: unset;
+}
+
+.hide {
+  display: none !important;
+}
+
+.visibility-off {
+  visibility: hidden !important;
+}
+
+
+.fl_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fl_col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Desktop
+@media (min-width: 992px) {
+  .container_full {
+    padding-right: 3.13vw;
+    padding-left: 3.13vw;
+  }
+
+  .container_boxed {
+    padding-right: 9vw;
+    padding-left: 9vw;
+  }
+
+  .Hspace {
+    padding-top: 7.8vw;
+    padding-bottom: 7.8vw;
+  }
+
+  // #container {
+  //   padding-top: 6.67vw;
+  // }
+}
+
+//Tablet & Mobile =>
+@media (max-width: 992px) {
+  .fl_row {
+    // flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+}
+
+//Tablet =>
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_full,
+  .container_boxed {
+    padding-left: 4.32vw;
+    padding-right: 4.32vw;
+  }
+}
+
+//Mobile =>
+@media (max-width: 767px) {
+
+  .container_full,
+  .container_boxed {
+    padding-left: 9.23vw;
+    padding-right: 9.23vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// //Mobile =>
+// @media (max-width: 767px) {
+//   body {
+//     margin-top: -1px;
+//   }
+//   .container_full,
+//   .container_boxed {
+//     padding-right: 8.97vw;
+//     padding-left: 8.97vw;
+//   }
+
+//   .wrapper {
+//     flex-direction: column !important;
+//     & .media_bloc {
+//       max-width: unset !important;
+//       width: 100% !important;
+//     }
+//   }
+//   .Hspace {
+//     padding-top: 7.8vw;
+//     padding-bottom: 7.8vw;
+//   }
+// }

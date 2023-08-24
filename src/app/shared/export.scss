@@ -1,0 +1,29 @@
+//Global Style
+@import '../../app/assets/sass/public/colors.scss';
+@import '../../app/assets/sass/public/typo.scss';
+@import '../../app/assets/sass/public/rules.scss';
+@import '../../app/assets/sass/public/layout.scss';
+@import '../../app/assets/sass/public/global.scss';
+
+
+//Paritals
+@import '../../app/assets/sass/partials/header.scss';
+@import '../../app/assets/sass/partials/footer.scss';
+
+
+//Pages 
+@import '../../app/assets/sass/pages/pages.scss';
+
+
+
+
+
+// Components
+@import '../../app/assets/sass/components/Primary_block.scss';
+@import '../../app/assets/sass/components/Home/block_02.scss';
+@import '../../app/assets/sass/components/Home/block_03.scss';
+@import '../../app/assets/sass/components/Home/block_04.scss';
+@import '../../app/assets/sass/components/Home/block_05.scss';
+@import '../../app/assets/sass/components/Home/block_06.scss';
+@import '../../app/assets/sass/components/Home/block_07.scss';
+@import '../../app/assets/sass/components/Home/block_08.scss';

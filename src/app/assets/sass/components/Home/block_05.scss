@@ -1,0 +1,124 @@
+#Block_05 {
+    padding-top: 8.51vw;
+    margin-left: 9vw;
+    overflow: hidden;
+
+    & .mySwiper_expertises {
+        overflow: unset !important;
+
+        & .swiper-wrapper {
+            & .swiper-slide {
+                // height: 27.29vw;
+                background-color: #171717;
+                border-radius: 30px;
+                // width: 29.3vw !important;
+                color: $white-color;
+                position: relative;
+                // margin-right: $s40-desktop !important;
+
+                & .p16 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    padding-bottom: 1px;
+                }
+
+                & .icon {
+                    position: absolute;
+                    // top: -3.13vw;
+                    left: $s40-desktop;
+                    // width: 8.54vw;
+                    object-fit: cover;
+                }
+
+                & .p60 {
+                    text-align: right;
+                    opacity: 0.3;
+                }
+            }
+
+            & .swiper-slide-active {
+                background-color: $background_bleu !important;
+                // height: 32.57vw !important;
+
+                & .p16 {
+                    -webkit-line-clamp: 12 !important;
+                    line-clamp: 12 !important;
+                }
+            }
+        }
+    }
+
+    & .swiper-scrollbar {
+        // width: 54.97vw !important;
+        // right: 2.8vw !important;
+        left: unset !important;
+        bottom: 0vw !important;
+        background-color: #87898A !important;
+
+        & .swiper-scrollbar-drag {
+            // width: 20.38vw !important;
+            background-color: $bleu-color !important;
+        }
+    }
+
+
+    // Desktop
+    @media (min-width: 992px) {
+        padding-left: unset !important;
+        padding-right: unset !important;
+
+        & .swiper-wrapper {
+            & .swiper-slide {
+                height: 27.29vw;
+                width: 29.3vw !important;
+
+                & .icon {
+                    top: -3.13vw;
+                    width: 8.54vw;
+                }
+            }
+
+            & .swiper-slide-active {
+                height: 32.57vw !important;
+            }
+        }
+
+        & .swiper-scrollbar {
+            width: 54.97vw !important;
+            right: 2.8vw !important;
+
+            & .swiper-scrollbar-drag {
+                width: 20.38vw !important;
+            }
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        padding-bottom: 8.51vw;
+        margin: unset !important;
+
+        & .icon {
+            top: -3.13vw;
+            width: 20vw;
+        }
+
+        & .swiper-scrollbar {
+            bottom: -7vw !important;
+        }
+
+        & .swiper {
+            height: 430px !important;
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
+}

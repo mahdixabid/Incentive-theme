@@ -1,0 +1,186 @@
+#header {
+    // background-color: $black-color;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    & .primary_header {
+        justify-content: space-between;
+        align-items: center;
+
+        & .logo_menu {
+            align-items: center;
+
+            & .toggle_menu {
+                cursor: pointer;
+
+                & img {
+                    width: 1.94vw;
+                    object-fit: cover;
+                }
+
+                & .swipe_right {
+                    left: 0 !important;
+                }
+
+                & .menu_canvas {
+                    position: fixed;
+                    top: 0;
+                    left: -100%;
+                    width: 26%;
+                    height: 100%;
+                    z-index: 99999;
+                    background-color: $black-color;
+                    transition: all 0.3s;
+
+                    & .close_btn {
+                        position: absolute;
+                        top: $s20-desktop;
+                        right: $s20-desktop;
+                        width: 3.33vw;
+                        transition: all 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                    & .nav_canvas {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: $s40-desktop;
+
+                            & a {
+                                color: $white-color;
+                                font-size: $p14;
+                                position: relative;
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .logo {
+                & img {
+                    width: 8.33vw;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        & .nav_header {
+            & ul {
+                display: flex;
+                gap: 3.13vw;
+
+                & .current_page_item {
+                    & a {
+                        color: $bleu-color !important;
+
+                        &::before {
+                            color: $bleu-color !important;
+
+                        }
+                    }
+                }
+
+                & li {
+                    & a {
+                        color: $white-color;
+                        font-size: $p14;
+                        position: relative;
+                        transition: all 0.3s;
+
+                        &::before {
+                            position: absolute;
+                            top: -1.25vw;
+                            right: 0;
+                            color: $white-color;
+                            font-size: $p14;
+
+                        }
+
+                        &:hover {
+                            color: $bleu-color;
+
+                            &:before {
+                                color: $bleu-color;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        & a {
+                            &::before {
+                                content: "01";
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        & a {
+                            &::before {
+                                content: "02";
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        & a {
+                            &::before {
+                                content: "03";
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        & a {
+                            &::before {
+                                content: "04";
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(5) {
+                        & a {
+                            &::before {
+                                content: "05";
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(6) {
+                        & a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Desktop
+    @media (min-width: 992px) {}
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .desktop_menu {
+            display: none !important;
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
+}

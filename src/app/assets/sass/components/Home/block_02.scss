@@ -1,0 +1,74 @@
+#Block_02 {
+    & .left_block {
+        background-color: $black02-color;
+        border-radius: 30px;
+        // height: 30vw;
+        // width: 29.44vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
+
+        & img {
+            object-fit: cover;
+            // width: 23.9vw;
+            // margin: 2.78vw;
+            animation: rotate 80s ease infinite;
+        }
+    }
+
+    // & .right_block {
+    //     width: 60vw;
+    // }
+
+
+
+    @keyframes rotate {
+
+        0%,
+        100% {
+            transform: rotate(0deg);
+            /* Start and end position */
+        }
+
+        50% {
+            transform: rotate(360deg);
+            /* Middle position - adjust the jump height as needed */
+        }
+
+    }
+
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .left_block {
+            height: 30vw;
+
+            & & img {
+                width: 23.9vw;
+                margin: 2.78vw;
+            }
+        }
+
+        & .right_block {
+            width: 60vw;
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .left_block {
+            aspect-ratio: 1/1;
+
+            & img {
+                width: 85%;
+            }
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
+}

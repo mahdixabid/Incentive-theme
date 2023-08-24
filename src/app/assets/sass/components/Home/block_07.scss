@@ -1,0 +1,25 @@
+#Block_07 {
+    padding-top: 8.51vw;
+    padding-bottom: 8.51vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+
+    & .block_title {
+        max-width: 34vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .logos {
+        flex-wrap: wrap;
+
+        & img {
+            min-width: 8vw;
+            min-height: 2.4vw;
+            max-width: 8vw;
+            max-height: 8vw;
+        }
+    }
+}

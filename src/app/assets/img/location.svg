@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="20" viewBox="0 0 14 20">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M0,7A7,7,0,1,1,14,7c0,5.25-7,13-7,13S0,12.25,0,7Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_15" data-name="Mask Group 15" clip-path="url(#clip-path)">
+    <g id="Symbols">
+      <g id="Icon_Location" data-name="Icon/Location">
+        <path id="Mask-2" data-name="Mask" d="M12,2A7,7,0,0,0,5,9c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,12,2Zm0,9.5A2.5,2.5,0,1,1,14.5,9,2.5,2.5,0,0,1,12,11.5Z" transform="translate(-5 -2)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

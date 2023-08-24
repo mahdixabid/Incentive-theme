@@ -1,0 +1,22 @@
+#Block_04 {
+    padding-top: 5.9vw;
+    justify-content: space-between;
+    align-items: center;
+
+    & .left_block {
+        width: 45.56vw;
+    }
+
+    & .right_block {
+        flex: 1;
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        padding-bottom: 80px;
+
+        & .left_block {
+            width: unset !important;
+        }
+    }
+}
