@@ -29,6 +29,15 @@ toggle_btn.addEventListener('click', function () {
 close_btn.addEventListener('click', function () {
   menu_canvas.classList.remove("swipe_right");
 });
+var toggle_mobile = document.querySelector('.toggle_btn');
+var nav_mobile = document.querySelector('.nav_canvas_mobile');
+var close_mobile = document.querySelector('.close_btn_mobile');
+toggle_mobile.addEventListener('click', function () {
+  nav_mobile.classList.add("swipe_up");
+});
+close_mobile.addEventListener('click', function () {
+  nav_mobile.classList.remove("swipe_up");
+});
 
 /***/ }),
 

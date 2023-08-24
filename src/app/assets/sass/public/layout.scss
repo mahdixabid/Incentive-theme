@@ -24,6 +24,10 @@ body:not([class*=elementor-page-]) .site-main,
   display: none !important;
 }
 
+.elementor-element {
+  margin: unset !important;
+}
+
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
   padding: unset !important;
 }
@@ -32,6 +36,7 @@ body {
   // font-family: 'Poppins', sans-serif;
   background-color: #F4F4F4;
   overflow-x: hidden;
+
 }
 
 * {
@@ -95,10 +100,15 @@ strong {
     // flex-direction: column !important;
     flex-wrap: wrap;
   }
+
+   body {
+    margin-top: -5px;
+  }
 }
 
 //Tablet =>
 @media (min-width: 768px) and (max-width: 991px) {
+
   .container_full,
   .container_boxed {
     padding-left: 4.32vw;
