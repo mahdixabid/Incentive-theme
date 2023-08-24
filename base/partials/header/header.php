@@ -55,19 +55,19 @@ function header_primary()
                 </a>
             </div>
             <img class="toggle_btn" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/toggle_btn_menu_white.svg"; ?>">
+            </div>
 
-        </div>
-        <div class="nav_canvas_mobile">
-        <img class="close_btn_mobile" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/close_btn_white.svg"; ?>">
-                <?php
-                wp_nav_menu([
-                    "menu" => "primary_menu_primary",
-                    "container" => "",
-                    "menu_class" => ""
-                ]);
-                $menu = ob_get_clean();
-                echo $menu;
-                ?>
+            <div class="nav_canvas_mobile">
+                    <img class="close_btn_mobile" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/close_btn_white.svg"; ?>">
+                    <?php
+                    wp_nav_menu([
+                        "menu" => "primary_menu_primary",
+                        "container" => "",
+                        "menu_class" => ""
+                    ]);
+                    $menu = ob_get_clean();
+                    echo $menu;
+                    ?>
             </div>
     </div>
     <?php

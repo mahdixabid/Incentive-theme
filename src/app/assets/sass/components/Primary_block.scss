@@ -68,6 +68,15 @@
         & .shape_block {
             display: none !important;
         }
+
+        & .btn_light {
+            width: 100%;
+
+            & a,
+            p {
+                width: 77% !important;
+            }
+        }
     }
 
     //Tablet =>

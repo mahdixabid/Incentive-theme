@@ -64,6 +64,14 @@
                 width: 85%;
             }
         }
+
+        & .btn_light {
+            width: 100%;
+            & p,
+            a {
+                width: 100% !important;
+            }
+        }
     }
 
     //Tablet =>

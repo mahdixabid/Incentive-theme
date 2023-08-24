@@ -472,7 +472,7 @@ body:not([class*=elementor-page-]) .site-main,
 }
 
 body {
-  background-color: #F4F4F4;
+  background-image: url("http://localhost/incentive/wp-content/themes/hello-elementor/src/app/assets/img/home_bk.png");
   overflow-x: hidden;
 }
 
@@ -743,6 +743,11 @@ strong {
 #header .swipe_up {
   bottom: 0 !important;
 }
+@media (min-width: 992px) {
+  #header .mobile_menu {
+    display: none !important;
+  }
+}
 @media (max-width: 992px) {
   #header .desktop_menu {
     display: none !important;
@@ -842,7 +847,6 @@ strong {
 }
 
 .home_page {
-  background-image: url("http://localhost/incentive/wp-content/themes/hello-elementor/src/app/assets/img/home_bk.png");
   background-size: cover;
   background-attachment: scroll;
   margin-top: -0.1vw;
@@ -894,6 +898,13 @@ strong {
   #Primary_block .shape_block {
     display: none !important;
   }
+  #Primary_block .btn_light {
+    width: 100%;
+  }
+  #Primary_block .btn_light a,
+  #Primary_block .btn_light p {
+    width: 77% !important;
+  }
 }
 #Block_02 .left_block {
   background-color: #141414;
@@ -936,6 +947,13 @@ strong {
   }
   #Block_02 .left_block img {
     width: 85%;
+  }
+  #Block_02 .btn_light {
+    width: 100%;
+  }
+  #Block_02 .btn_light p,
+  #Block_02 .btn_light a {
+    width: 100% !important;
   }
 }
 #Block_03 {
@@ -1130,6 +1148,9 @@ strong {
   #Block_06 .swiper-pagination span {
     font-size: 1.25vw !important;
   }
+  #Block_06 .swiper-slide {
+    height: 43.75vw;
+  }
   #Block_06 .swiper-slide .p16 {
     max-width: 37.5vw;
   }
@@ -1164,7 +1185,6 @@ strong {
 }
 
 #Block_07 {
-  padding-top: 8.51vw;
   padding-bottom: 8.51vw;
   overflow: hidden;
   align-items: center;
