@@ -6,6 +6,17 @@
   outline: none;
 }
 
+html,
+body,
+button,
+div,
+p,
+h1,
+img,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
 img {
   max-width: unset;
 }
@@ -18,6 +29,10 @@ img {
 body:not([class*=elementor-page-]) .site-main,
 .elementor-section.elementor-section-boxed>.elementor-container {
   max-width: unset !important;
+}
+
+.wpc-edit-filter-set {
+  display: none !important;
 }
 
 .entry-title {
@@ -42,6 +57,9 @@ body {
 
 .page-id-18 {
   background-image: url("https://i.ibb.co/bHyzF77/home-bk.png") !important;
+}
+.page-id-131 {
+  background-image: url("https://i.postimg.cc/C12JCQL4/Group-5448-online.png") !important;
 }
 
 * {

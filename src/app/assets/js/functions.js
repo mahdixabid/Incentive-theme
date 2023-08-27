@@ -24,3 +24,16 @@ toggle_mobile.addEventListener('click', function () {
 close_mobile.addEventListener('click', function () {
     nav_mobile.classList.remove("swipe_up")
 })
+
+
+
+let btn_postuler = document.querySelector(".postuler_popup .btn_light")
+let close_btn_popup = document.querySelector(".postuler_popup .close_btn")
+let popup_container = document.querySelector('.overlay_popup')
+btn_postuler.addEventListener('click', function (e) {
+    popup_container.classList.remove("hide")
+})
+close_btn_popup.addEventListener('click', function(e) {
+    popup_container.classList.add("hide")
+})
+

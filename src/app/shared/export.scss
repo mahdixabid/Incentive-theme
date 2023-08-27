@@ -19,9 +19,6 @@
 @import '../../app/assets/sass/pages/pages.scss';
 
 
-
-
-
 // Components
 @import '../../app/assets/sass/components/telegram.scss';
 
@@ -41,8 +38,17 @@
 @import '../../app/assets/sass/components/Expertises/block_03.scss';
 
 
-// => Expertises Components
+// => Portfolio Components
 @import '../../app/assets/sass/components/Portfolio/block_01.scss';
 // @import '../../app/assets/sass/components/Portfolio/block_02.scss';
 // @import '../../app/assets/sass/components/Portfolio/block_03.scss';
 
+
+// => Recrutement Components
+@import '../../app/assets/sass/components/Recrutement-cariere/recrutement-cariere.scss';
+// @import '../../app/assets/sass/components/Portfolio/block_02.scss';
+// @import '../../app/assets/sass/components/Portfolio/block_03.scss';
+
+
+// => Contact Components
+@import '../../app/assets/sass/components/Contact/contact_page.scss';

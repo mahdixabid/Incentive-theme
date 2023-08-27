@@ -454,6 +454,17 @@ p {
   outline: none;
 }
 
+html,
+body,
+button,
+div,
+p,
+h1,
+img,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
 img {
   max-width: unset;
 }
@@ -466,6 +477,10 @@ img {
 body:not([class*=elementor-page-]) .site-main,
 .elementor-section.elementor-section-boxed > .elementor-container {
   max-width: unset !important;
+}
+
+.wpc-edit-filter-set {
+  display: none !important;
 }
 
 .entry-title {
@@ -488,6 +503,10 @@ body {
 
 .page-id-18 {
   background-image: url("https://i.ibb.co/bHyzF77/home-bk.png") !important;
+}
+
+.page-id-131 {
+  background-image: url("https://i.postimg.cc/C12JCQL4/Group-5448-online.png") !important;
 }
 
 * {
@@ -966,6 +985,7 @@ strong {
 }
 #Contact_footer .wrapper .form_section .form .frm_fields_container textarea {
   min-height: 4.13vw !important;
+  max-height: 12vw !important;
 }
 #Contact_footer .wrapper .form_section .form .frm_button_submit {
   box-shadow: unset !important;
@@ -1368,7 +1388,7 @@ strong {
     max-height: 8vw;
   }
 }
-#Home_block_08 {
+#Prefooter {
   padding-top: 8.51vw;
   padding-bottom: 8.51vw;
   overflow: hidden;
@@ -1376,7 +1396,7 @@ strong {
   justify-content: space-around;
   position: relative;
 }
-#Home_block_08 .bk_block {
+#Prefooter .bk_block {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1386,33 +1406,33 @@ strong {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#Home_block_08 .left_block {
+#Prefooter .left_block {
   z-index: 2;
 }
-#Home_block_08 .block_element {
+#Prefooter .block_element {
   display: flex;
   flex: 1;
 }
 @media (min-width: 992px) {
-  #Home_block_08 .left_block {
+  #Prefooter .left_block {
     gap: 5.56vw;
   }
-  #Home_block_08 .left_block .block_title {
+  #Prefooter .left_block .block_title {
     max-width: 22.22vw;
   }
-  #Home_block_08 .left_block .block_description {
+  #Prefooter .left_block .block_description {
     max-width: 32.22vw;
   }
-  #Home_block_08 .left_block .block_description .light_btn img {
+  #Prefooter .left_block .block_description .light_btn img {
     width: 2.43vw;
   }
 }
 @media (max-width: 992px) {
-  #Home_block_08 {
+  #Prefooter {
     padding-bottom: 16vw !important;
     gap: 40px;
   }
-  #Home_block_08 .left_block {
+  #Prefooter .left_block {
     gap: 40px;
   }
 }
@@ -1618,4 +1638,235 @@ strong {
   #Portfolio_block_01 .swiper-pagination span {
     font-size: 3.62vw !important;
   }
+}
+
+#Recrutement_listing {
+  padding-top: 5.56vw;
+}
+#Recrutement_listing .recrutement-post {
+  justify-content: space-between;
+}
+#Recrutement_listing .recrutement-post .left_block {
+  max-width: 21.32vw;
+}
+#Recrutement_listing .recrutement-post .right_block {
+  max-width: 53.6vw;
+}
+#Recrutement_listing .line_diver {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#Recrutement_listing .line_diver hr {
+  width: 72.72vw;
+  height: 0.14vw;
+  background-color: #3F4445;
+  border: none;
+}
+#Recrutement_listing .pagination {
+  justify-content: center;
+}
+#Recrutement_listing .pagination a:hover {
+  color: #00B7E9 !important;
+}
+
+#Current_Recrutement_Post .bk_top {
+  height: 43.75vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Current_Recrutement_Post .post_data {
+  justify-content: space-between;
+}
+#Current_Recrutement_Post .post_data .left_block {
+  max-width: 53.61vw;
+}
+#Current_Recrutement_Post .post_data .right_block {
+  max-width: 21.4vw;
+  background-color: #004654;
+  flex: 1;
+  border-radius: 1.74vw;
+}
+#Current_Recrutement_Post .postuler_popup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Current_Recrutement_Post .postuler_popup p {
+  cursor: pointer;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(20, 20, 20, 0.7215686275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup {
+  position: relative;
+  width: 50vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #004654;
+  border-radius: 1.74vw;
+  display: flex;
+  flex-direction: column;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup p {
+  color: #F9F9F9;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .close_btn {
+  position: absolute;
+  top: 0.69vw;
+  right: 0.69vw;
+  cursor: pointer;
+  width: 2.08vw;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form::-moz-placeholder {
+  color: #F9F9F9 !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form::placeholder {
+  color: #F9F9F9 !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form label {
+  display: none !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_fields_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.69vw;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_fields_container input,
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_fields_container textarea {
+  background-color: transparent !important;
+  border-bottom: solid #F9F9F9 !important;
+  border-width: 0 0 1px 0;
+  font-size: 1.46vw !important;
+  padding: 0.35vw !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+  color: #F9F9F9 !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_fields_container input {
+  height: 4.13vw !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_fields_container textarea {
+  min-height: 4.13vw !important;
+  max-height: 12vw !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_dropzone.frm_single_upload {
+  max-width: unset !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_dropzone.frm_single_upload * {
+  color: #F9F9F9 !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .with_frm_style .frm_dropzone,
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_dropzone .dz-message {
+  background-color: transparent !important;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_upload_icon:before {
+  filter: invert(1);
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .with_frm_style .frm_message,
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_success_style {
+  background-color: #F9F9F9;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .with_frm_style .frm_message p,
+#Current_Recrutement_Post .postuler_popup .overlay_popup .popup .form .frm_success_style p {
+  color: #141414 !important;
+  text-align: center;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .frm_submit {
+  display: flex;
+  justify-content: flex-end;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .frm_submit .frm_button_submit {
+  box-shadow: unset !important;
+  padding: 0.69vw 2.78vw !important;
+  background-color: transparent !important;
+  color: #F9F9F9 !important;
+  border: 1px solid #00B7E9 !important;
+  transition: all 0.3s;
+  font-size: 0.97vw !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 13.33vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Current_Recrutement_Post .postuler_popup .overlay_popup .frm_submit .frm_button_submit:hover {
+  background-color: #00B7E9 !important;
+}
+
+#contact_page .top_contact .block_text {
+  max-width: 61.5vw;
+}
+#contact_page .contact_form {
+  align-items: center;
+}
+#contact_page .contact_form .left_block img {
+  width: 37.64vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contact_page .contact_form .right_block {
+  flex: 1;
+}
+#contact_page .contact_form .right_block::-moz-placeholder {
+  color: #F9F9F9 !important;
+}
+#contact_page .contact_form .right_block::placeholder {
+  color: #F9F9F9 !important;
+}
+#contact_page .contact_form .right_block label {
+  display: none !important;
+}
+#contact_page .contact_form .right_block .frm_fields_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+#contact_page .contact_form .right_block .frm_fields_container input,
+#contact_page .contact_form .right_block .frm_fields_container textarea {
+  background-color: transparent !important;
+  border-bottom: solid #F9F9F9 !important;
+  border-width: 0 0 1px 0;
+  font-size: 1.46vw !important;
+  padding: 0.35vw !important;
+  border-radius: unset !important;
+  width: 100%;
+  box-shadow: unset !important;
+  color: #F9F9F9 !important;
+}
+#contact_page .contact_form .right_block .frm_fields_container input {
+  height: 4.13vw !important;
+}
+#contact_page .contact_form .right_block .frm_fields_container textarea {
+  min-height: 4.13vw !important;
+  max-height: 12vw !important;
+}
+#contact_page .contact_form .right_block .frm_button_submit {
+  box-shadow: unset !important;
+  padding: 0.69vw 2.78vw !important;
+  background-color: transparent !important;
+  color: #F9F9F9 !important;
+  border: 1px solid #00B7E9 !important;
+  transition: all 0.3s;
+  font-size: 0.97vw !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 13.33vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact_page .contact_form .right_block .frm_button_submit:hover {
+  background-color: #00B7E9 !important;
 }

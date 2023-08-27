@@ -1,0 +1,200 @@
+#Recrutement_listing {
+    padding-top: 5.56vw;
+
+    & .recrutement-post {
+        justify-content: space-between;
+
+        & .left_block {
+            max-width: 21.32vw;
+
+        }
+
+        & .right_block {
+            max-width: 53.6vw;
+        }
+    }
+
+    & .line_diver {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        & hr {
+            width: 72.72vw;
+            height: 0.14vw;
+            background-color: #3F4445;
+            border: none;
+        }
+    }
+
+    & .pagination {
+        justify-content: center;
+
+        & a {
+            &:hover {
+                color: $bleu-color !important;
+            }
+        }
+    }
+}
+
+#Current_Recrutement_Post {
+    & .bk_top {
+        height: 43.75vw;
+        object-fit: cover;
+    }
+
+    & .post_data {
+        justify-content: space-between;
+
+        & .left_block {
+            max-width: 53.61vw;
+        }
+
+        & .right_block {
+            max-width: 21.4vw;
+            background-color: $background_bleu;
+            flex: 1;
+            border-radius: 1.74vw;
+        }
+    }
+
+    & .postuler_popup {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & p {
+            cursor: pointer;
+        }
+
+        & .overlay_popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            background-color: #141414b8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+
+            & .popup {
+                position: relative;
+                width: 50vw;
+                height: fit-content;
+                background-color: $background_bleu;
+                border-radius: 1.74vw;
+                display: flex;
+                // justify-content: center;
+                flex-direction: column;
+
+                & p {
+                    color: $white-color;
+                }
+
+                & .close_btn {
+                    position: absolute;
+                    top: $s10-desktop;
+                    right: $s10-desktop;
+                    cursor: pointer;
+                    width: 2.08vw;
+                }
+
+                & .form {
+                    &::placeholder {
+                        color: $white-color !important;
+                    }
+
+                    & label {
+                        display: none !important;
+                    }
+
+                    & .frm_fields_container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: $s10-desktop;
+
+                        & input,
+                        textarea {
+                            background-color: transparent !important;
+                            border-bottom: solid $white-color !important;
+                            border-width: 0 0 1px 0;
+                            font-size: $p21 !important;
+                            padding: $s5-desktop !important;
+                            border-radius: unset !important;
+                            // width: 100%;
+                            box-shadow: unset !important;
+                            color: $white-color !important;
+
+                        }
+
+                        & input {
+                            height: 4.13vw !important;
+                        }
+
+                        textarea {
+                            min-height: 4.13vw !important;
+                            max-height: 12vw !important;
+                        }
+                    }
+
+                    & .frm_dropzone.frm_single_upload {
+                        max-width: unset !important;
+
+                        & * {
+                            color: $white-color !important;
+                        }
+                    }
+
+                    & .with_frm_style .frm_dropzone,
+                    .frm_dropzone .dz-message {
+                        background-color: transparent !important;
+                    }
+
+                    & .frm_upload_icon:before {
+                        filter: invert(1);
+                    }
+
+                    & .with_frm_style .frm_message,
+                    .frm_success_style {
+                        background-color: $white-color;
+
+                        & p {
+                            color: $black-color !important;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            & .frm_submit {
+                display: flex;
+                justify-content: flex-end;
+
+                & .frm_button_submit {
+                    box-shadow: unset !important;
+                    padding: $s10-desktop $s40-desktop !important;
+                    background-color: transparent !important;
+                    color: $white-color !important;
+                    border: 1px solid $bleu-color !important;
+                    transition: all 0.3s;
+                    font-size: $p14 !important;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    width: 13.33vw !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background-color: $bleu-color !important;
+                    }
+                }
+            }
+
+        }
+    }
+}

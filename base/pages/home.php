@@ -9,7 +9,7 @@ function home_page()
     echo do_shortcode( '[Home_block_05]' );
     echo do_shortcode( '[Home_block_06]' );
     echo do_shortcode( '[Home_block_07]' );
-    echo do_shortcode( '[Home_block_08]' );
+    echo do_shortcode( '[Prefooter]' );
   echo '</div>';
 }
 
