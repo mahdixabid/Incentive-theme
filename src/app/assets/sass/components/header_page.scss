@@ -1,0 +1,32 @@
+.header_page {
+    max-width: 62.15vw;
+    height: 24vw;
+    margin: 0 auto;
+    position: relative;
+
+    & p {
+        color: $white-color ;
+        text-align: center;
+    }
+
+    & .bk_container {
+        & img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 45.56vw;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+            opacity: 0.4;
+        }
+    }
+
+    & .block_content {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

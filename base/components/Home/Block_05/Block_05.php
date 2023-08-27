@@ -1,9 +1,9 @@
 <?php
-function Block_05()
+function Home_block_05()
 {
     require get_template_directory() . '/base/components/path.php';
     ?>
-<div id="Block_05" class="container_boxed">
+<div id="Home_block_05" class="container_boxed">
     <div class="swiper mySwiper_expertises">
         <div class="swiper-wrapper">
             <?php
@@ -45,6 +45,8 @@ function Block_05()
     // Define configuration options based on screen width
     var swiperConfig = {
         loop: true,
+        draggable: true,
+        clickable: true,
         spaceBetween: 30,
         scrollbar: {
             el: ".swiper-scrollbar",
@@ -63,5 +65,5 @@ function Block_05()
 <?php
 }
 
-add_shortcode("Block_05", "Block_05");
+add_shortcode("Home_block_05", "Home_block_05");
 ?>

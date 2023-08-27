@@ -1,21 +1,23 @@
 <?php
-function telegram() {
-?>
+function telegram()
+{
+    ?>
  <style>
       .telegram {
       position: relative;
       display: block !important;
-      width: 80px;
-      margin: 60px auto;
+      width: 5.56vw !important;
+      margin: 4.17vw auto;
       z-index: 3;
+      transform: translateY(-4vw);
     }
 
     #paper-plane {
-      width: 37px;
-      justify-content: center;
-      display: flex;
-      text-align: center;
-      transform: translate(-3px, 7px);
+    width: 4.44vw;
+    height:4.44vw;
+    justify-content: center;
+    display: flex;
+    text-align: center;
     }
 
     .telegram .delay1 {
@@ -23,6 +25,7 @@ function telegram() {
       animation: waves 2.5s linear;
       -webkit-animation-delay: 0.1s;
       animation-delay: 0.1s;
+      display: none !important;
     }
 
     .telegram .delay2 {
@@ -49,6 +52,9 @@ function telegram() {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      top: 3.5vw;
+      left: 3.2vw;
     }
 
     .svg-box {
@@ -58,11 +64,12 @@ function telegram() {
 
     .circle {
       display: block;
-      height: 60px;
-      width: 60px;
+      height: 10.42vw;
+      width: 10.42vw;
       border-radius: 50%;
-      background: #0194c7;
-      margin: 10px;
+      /* background: #0194c763; */
+      border: 1px solid #00B7E9;
+      margin: 0.69vw;
       transition: 5s ease;
       position: absolute;
       top: 0px;
@@ -75,7 +82,7 @@ function telegram() {
       }
 
       100% {
-        transform: scale(4);
+        transform: scale(3);
         opacity: 0;
       }
     }
@@ -142,14 +149,12 @@ function telegram() {
  </style>
  <div class="telegram">
     <div class="svg-box">
-      <svg id="paper-plane" xmlns="http://www.w3.org/2000/svg" width="69.171" height="66.289"
-        viewBox="0 0 69.171 66.289">
-        <path id="Path_49275" data-name="Path 49275" d="M8.75,17.612V30.979a2.161,2.161,0,0,0,3.9,1.28l7.819-10.641Z"
-          transform="translate(16.469 33.148)" fill="#fff" />
-        <path id="Path_49276" data-name="Path 49276"
-          d="M68.263.4A2.162,2.162,0,0,0,66.01.245L1.162,34.11a2.163,2.163,0,0,0,.3,3.963l18.028,6.162L57.882,11.408,28.173,47.2,58.386,57.528a2.212,2.212,0,0,0,.7.115A2.16,2.16,0,0,0,61.222,55.8l7.926-53.32A2.165,2.165,0,0,0,68.263.4Z"
-          transform="translate(0 0)" fill="#fff" />
-      </svg>
+    <svg id="paper-plane" xmlns="http://www.w3.org/2000/svg" width="90.297" height="86.535" viewBox="0 0 90.297 86.535">
+  <path id="Path_49275" data-name="Path 49275" d="M8.75,17.612v17.45a2.821,2.821,0,0,0,5.094,1.67L24.052,22.842Z" transform="translate(24.171 48.651)" fill="#00b7e9"/>
+  <path id="Path_49276" data-name="Path 49276" d="M89.112.523A2.823,2.823,0,0,0,86.17.32L1.516,44.528A2.823,2.823,0,0,0,1.908,49.7l23.534,8.044L75.56,14.892,36.777,61.617,76.218,75.1a2.887,2.887,0,0,0,.91.15,2.819,2.819,0,0,0,2.792-2.4L90.267,3.24A2.827,2.827,0,0,0,89.112.523Z" transform="translate(0 0)" fill="#00b7e9"/>
+</svg>
+
+
 
     </div>
     <div class="circle delay1"></div>

@@ -34,9 +34,14 @@ body:not([class*=elementor-page-]) .site-main,
 
 body {
   // font-family: 'Poppins', sans-serif;
-  background-image: url("http://localhost/incentive/wp-content/themes/hello-elementor/src/app/assets/img/home_bk.png");
-  overflow-x: hidden;
+  background-image: url("https://i.ibb.co/wCTzxQm/body-bk.png") !important;
 
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+.page-id-18 {
+  background-image: url("https://i.ibb.co/bHyzF77/home-bk.png") !important;
 }
 
 * {
@@ -101,7 +106,7 @@ strong {
     flex-wrap: wrap;
   }
 
-   body {
+  body {
     margin-top: -5px;
   }
 }

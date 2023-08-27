@@ -2,7 +2,7 @@
     height: 100vh;
     // align-items: center;
     position: relative;
-    padding-top: 18.47vw;
+    padding-top: 6vw;
 
     & .content_block {
         // max-width: 55vw;
@@ -54,14 +54,14 @@
             & img {
                 width: 53.61vw;
                 right: 0;
-                top: 4.2vw;
+                top: -7vw;
             }
         }
     }
 
     //Tablet & Mobile =>
     @media (max-width: 992px) {
-        padding-top: 37.47vw !important;
+        padding-top: 17.47vw !important;
         height: unset !important;
         padding-bottom: 18.47vw;
 

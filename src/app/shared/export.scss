@@ -1,4 +1,4 @@
-//Global Style
+// => Global Style
 @import '../../app/assets/sass/public/colors.scss';
 @import '../../app/assets/sass/public/typo.scss';
 @import '../../app/assets/sass/public/rules.scss';
@@ -6,12 +6,16 @@
 @import '../../app/assets/sass/public/global.scss';
 
 
-//Paritals
+// => Paritals
 @import '../../app/assets/sass/partials/header.scss';
 @import '../../app/assets/sass/partials/footer.scss';
 
+// => Public Components
+@import '../../app/assets/sass/components/header_page.scss';
+@import '../../app/assets/sass/components/contact_footer.scss';
 
-//Pages 
+
+// => Pages 
 @import '../../app/assets/sass/pages/pages.scss';
 
 
@@ -19,6 +23,9 @@
 
 
 // Components
+@import '../../app/assets/sass/components/telegram.scss';
+
+// => Home Page Components
 @import '../../app/assets/sass/components/Primary_block.scss';
 @import '../../app/assets/sass/components/Home/block_02.scss';
 @import '../../app/assets/sass/components/Home/block_03.scss';
@@ -27,3 +34,15 @@
 @import '../../app/assets/sass/components/Home/block_06.scss';
 @import '../../app/assets/sass/components/Home/block_07.scss';
 @import '../../app/assets/sass/components/Home/block_08.scss';
+
+// => Expertises Components
+@import '../../app/assets/sass/components/Expertises/block_01.scss';
+@import '../../app/assets/sass/components/Expertises/block_02.scss';
+@import '../../app/assets/sass/components/Expertises/block_03.scss';
+
+
+// => Expertises Components
+@import '../../app/assets/sass/components/Portfolio/block_01.scss';
+// @import '../../app/assets/sass/components/Portfolio/block_02.scss';
+// @import '../../app/assets/sass/components/Portfolio/block_03.scss';
+

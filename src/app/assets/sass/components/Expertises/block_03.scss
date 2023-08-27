@@ -1,0 +1,43 @@
+#Expertises_block_03 {
+    margin-top: 3vw;
+    & .List_experises {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6vw $s40-desktop;
+
+        & .Single_card {
+            background-color: #171717;
+            position: relative;
+            border-radius: 30px;
+            // width: 24vw;
+            height: 32.85vw;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            & p {
+                color: white;
+            }
+
+            & .card_header {
+                & img {
+                    width: 8.55vw;
+                    object-fit: cover;
+                    position: absolute;
+                    left: 2.78vw;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    top: -3.13vw;
+                    width: 8.54vw;
+                }
+            }
+
+            & .card_body {
+                padding-top: 3.13vw;
+            }
+
+            &:hover {
+                background-color: $background_bleu;
+            }
+        }
+    }
+}

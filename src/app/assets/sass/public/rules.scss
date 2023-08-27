@@ -22,11 +22,11 @@ $p14-tablet: 1.68vw; //p14px
 //
 
 //Font Mobile
-$p60-mobile: 9.7vw; //p60px    
-$p36-mobile: 9vw; //p36px    
-$p32-mobile: 8.21vw; //p32px   
+$p60-mobile: 8vw; //p60px    
+$p36-mobile: 7vw; //p36px    
+$p32-mobile: 6.21vw; //p32px   
 $p21-mobile: 5.38vw; //p21px   
-$p18-mobile: 4.62vw; //p18px   
+$p18-mobile: 3.62vw; //p18px   
 $p16-mobile: 4.10vw; //p16px   
 $p14-mobile: 3.59vw; //p14px   
 //
@@ -36,6 +36,7 @@ $p14-mobile: 3.59vw; //p14px
 //Space =>
 
 //Desktop => 
+$s70-desktop: 4.86vw; //70px
 $s40-desktop: 2.78vw; //40px
 $s30-desktop: 2.08vw; //30px
 $s20-desktop: 1.39vw; //20px
@@ -47,6 +48,7 @@ $px_1: 0.07vw;
 
 
 //Tablet => 
+$s70-tablet: 8.83vw; //70px
 $s40-tablet: 4.79vw; //40px
 $s30-tablet: 3.59vw; //30px
 $s20-tablet: 2.40vw; //20px
@@ -58,6 +60,7 @@ $px_1_tablet: 0.12vw;
 
 
 //Mobile => 
+$s70-mobile: 17.95vw; //70px
 $s40-mobile: 10.26vw; //40px
 $s30-mobile: 7.69vw; //30px
 $s20-mobile: 5.13vw; //20px
@@ -227,6 +230,10 @@ $px_1_mobile: 0.26vw;
         gap: $s40-desktop;
     }
 
+    .gp70 {
+        gap: $s70-desktop;
+    }
+
     .pd40 {
         padding: $s40-desktop ;
     }
@@ -271,6 +278,10 @@ $px_1_mobile: 0.26vw;
         gap: $s40-tablet;
     }
 
+    .gp70 {
+        gap: $s70-tablet;
+    }
+
     .pd40 {
         padding: $s20-tablet ;
     }
@@ -311,6 +322,10 @@ $px_1_mobile: 0.26vw;
 
     .gp40 {
         gap: $s40-mobile;
+    }
+
+    .gp70 {
+        gap: $s70-mobile;
     }
 
     .pd40 {

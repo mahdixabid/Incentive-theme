@@ -1,8 +1,8 @@
 <?php
-function Block_02() {
+function Home_block_02() {
     require get_template_directory() . '/base/components/path.php';
 ?>
-<div id="Block_02" class="fl_row container_boxed gp40">
+<div id="Home_block_02" class="fl_row container_boxed gp40">
     <div class="left_block">
         <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/earth.svg"; ?>">
     </div>
@@ -28,5 +28,5 @@ function Block_02() {
 
 }
 
-add_shortcode("Block_02", "Block_02");
+add_shortcode("Home_block_02", "Home_block_02");
 ?>

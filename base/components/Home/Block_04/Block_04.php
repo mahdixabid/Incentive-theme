@@ -1,8 +1,8 @@
 <?php
-function Block_04() {
+function Home_block_04() {
     require get_template_directory() . '/base/components/path.php';
 ?>
-<div id="Block_04" class="fl_row container_boxed gp40">
+<div id="Home_block_04" class="fl_row container_boxed gp40">
     <div class="left_block">
         <p class="p60 w-700 white">
         Découvrez nos <span class="bleu"> <u>expertises</u> </span>
@@ -17,5 +17,5 @@ function Block_04() {
 
 }
 
-add_shortcode("Block_04", "Block_04");
+add_shortcode("Home_block_04", "Home_block_04");
 ?>
