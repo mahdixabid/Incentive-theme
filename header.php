@@ -27,6 +27,7 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" type="image/x-icon" href="/wp-content/themes/hello-elementor/src/app/assets/img/favico.svg">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 

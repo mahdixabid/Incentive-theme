@@ -1,0 +1,16 @@
+#Incentive_block_01 {
+    & .wrapper {
+        justify-content: space-between;
+
+        & .left_block {
+            max-width: 49.56vw;
+        }
+
+        & .right_block {
+            & img {
+                width: 29.44vw;
+                object-fit: cover;
+            }
+        }
+    }
+}

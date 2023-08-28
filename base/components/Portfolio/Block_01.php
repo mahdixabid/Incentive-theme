@@ -43,6 +43,7 @@ function Portfolio_block_01() {
     </div>
     <script>
     var swiper = new Swiper(".mySwiper_portfolio", {
+      mousewheel: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

@@ -1870,3 +1870,120 @@ strong {
 #contact_page .contact_form .right_block .frm_button_submit:hover {
   background-color: #00B7E9 !important;
 }
+
+#Incentive_block_01 .wrapper {
+  justify-content: space-between;
+}
+#Incentive_block_01 .wrapper .left_block {
+  max-width: 49.56vw;
+}
+#Incentive_block_01 .wrapper .right_block img {
+  width: 29.44vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Incentive_block_02 .wrapper {
+  gap: 5.83vw;
+}
+#Incentive_block_02 .wrapper .left_block {
+  align-items: center;
+  position: relative;
+}
+#Incentive_block_02 .wrapper .left_block img {
+  position: absolute;
+  width: 45.47vw;
+  height: 38vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  right: -14vw;
+  top: 6vw;
+}
+#Incentive_block_02 .wrapper .right_block {
+  gap: 5vw;
+}
+#Incentive_block_02 .wrapper .right_block .list_item {
+  align-items: center;
+}
+#Incentive_block_02 .wrapper .right_block .list_item .number {
+  background-color: #00B7E9;
+  border-radius: 50%;
+  display: flex;
+  aspect-ratio: 1/1;
+}
+#Incentive_block_02 .wrapper .right_block .list_item .number p {
+  display: flex;
+  align-items: center;
+}
+#Incentive_block_02 .wrapper .right_block .list_item:nth-of-type(1) {
+  padding-left: 1.53vw;
+}
+#Incentive_block_02 .wrapper .right_block .list_item:nth-of-type(2) {
+  padding-left: 5.07vw;
+}
+
+#Incentive_block_03 {
+  min-height: 50vw;
+}
+#Incentive_block_03 .cards_container {
+  position: relative;
+}
+#Incentive_block_03 .cards_container .single_card {
+  width: 35.42vw;
+  aspect-ratio: 1/1;
+  background-color: #004654;
+  position: absolute;
+  top: 0;
+  border-radius: 25px;
+  transition: all 0.3s;
+  box-shadow: 21px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(1) {
+  z-index: 7;
+  left: 0;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(2) {
+  z-index: 6;
+  left: 9vw;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(3) {
+  z-index: 5;
+  left: 16vw;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(4) {
+  z-index: 4;
+  left: 23vw;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(5) {
+  z-index: 3;
+  left: 30vw;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(6) {
+  z-index: 2;
+  left: 37vw;
+}
+#Incentive_block_03 .cards_container .single_card:nth-of-type(7) {
+  z-index: 1;
+  left: 45.8vw;
+}
+#Incentive_block_03 .cards_container .single_card:hover {
+  z-index: 8;
+  transform: translateY(-1vw);
+}
+#Incentive_block_03 .cards_container .single_card .card_footer {
+  justify-content: space-between;
+  align-items: center;
+}
+#Incentive_block_03 .cards_container .single_card .card_footer p {
+  font-size: 8.33vw;
+  opacity: 0.5;
+}
+#Incentive_block_03 .cards_container .single_card .card_footer img {
+  width: 17vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
