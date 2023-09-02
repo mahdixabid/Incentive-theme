@@ -14,6 +14,7 @@ function incentive()
         echo do_shortcode('[Incentive_block_04]');
         echo do_shortcode('[Incentive_block_05]');
         echo do_shortcode('[Incentive_block_06]');
+        echo do_shortcode('[Contact_footer]');
     echo "</div>";
 }
 

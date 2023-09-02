@@ -1,5 +1,5 @@
 #Incentive_block_05 {
-    margin-bottom: 15vw;
+    margin-bottom: 2vw;
 
     & .block_header {
         max-width: 45.56vw;
@@ -48,6 +48,7 @@
             &:hover {
                 & img {
                     filter: grayscale(0);
+                    transform: translateY(3vw);
                 }
             }
 
