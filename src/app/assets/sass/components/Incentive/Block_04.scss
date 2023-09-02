@@ -1,1 +1,18 @@
-#Incentive_block_04{}
+#Incentive_block_04 {
+    
+
+    & .wrapper {
+        & .schema {
+            & .schema_header {}
+
+            & .schema_img {
+                display: flex;
+                justify-content: center;
+
+                & img {
+                    width: 77.78vw;
+                }
+            }
+        }
+    }
+}

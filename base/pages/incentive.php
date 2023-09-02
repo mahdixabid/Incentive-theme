@@ -11,9 +11,9 @@ function incentive()
         echo do_shortcode('[Incentive_block_01]');
         echo do_shortcode('[Incentive_block_02]');
         echo do_shortcode('[Incentive_block_03]');
-        // echo do_shortcode('[Incentive_block_04]');
-        // echo do_shortcode('[Incentive_block_05]');
-        // echo do_shortcode('[Incentive_block_06]');
+        echo do_shortcode('[Incentive_block_04]');
+        echo do_shortcode('[Incentive_block_05]');
+        echo do_shortcode('[Incentive_block_06]');
     echo "</div>";
 }
 
