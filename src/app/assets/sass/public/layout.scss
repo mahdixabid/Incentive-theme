@@ -48,7 +48,8 @@ body:not([class*=elementor-page-]) .site-main,
 }
 
 body {
-  // font-family: 'Poppins', sans-serif;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
   background-image: url("https://i.ibb.co/wCTzxQm/body-bk.png") !important;
 
   overflow-x: hidden;

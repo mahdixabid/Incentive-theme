@@ -2,6 +2,16 @@
     & .wrapper {
         justify-content: space-between;
 
+        & .right_block {
+            & img {
+                // width: 29.44vw;
+                object-fit: cover;
+            }
+        }
+    }
+
+    // Desktop
+    @media (min-width: 992px) {
         & .left_block {
             max-width: 49.56vw;
         }
@@ -9,8 +19,25 @@
         & .right_block {
             & img {
                 width: 29.44vw;
-                object-fit: cover;
             }
         }
     }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .wrapper {
+            gap: 40px;
+            & .right_block {
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }

@@ -16,8 +16,11 @@ function Incentive_block_04()
                     <p class="p18 bleu w-300 uper">Résumé et schéma</p>
                     <p class="p32 white w-900">La Méthodologie Agile</p>
                 </div>
-                <div class="schema_img">
+                <div class="schema_img desktop_schema">
                     <img class="close_btn" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/Méthodologie_schéma.svg"; ?>">
+                </div>
+                <div class="schema_img desktop_mobile">
+                    <img class="close_btn" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/Méthodologie_schéma_mobile.svg"; ?>">
                 </div>
             </div>
         </div>

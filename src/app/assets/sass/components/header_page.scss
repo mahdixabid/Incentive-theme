@@ -1,6 +1,5 @@
 .header_page {
-    max-width: 62.15vw;
-    height: 24vw;
+
     margin: 0 auto;
     position: relative;
 
@@ -15,7 +14,7 @@
             left: 50%;
             top: 0;
             transform: translateX(-50%);
-            width: 45.56vw;
+            // width: 45.56vw;
             height: 100%;
             object-fit: cover;
             object-position: center;
@@ -29,4 +28,31 @@
         justify-content: center;
         align-items: center;
     }
+
+    // Desktop
+    @media (min-width: 992px) {
+        max-width: 62.15vw;
+        height: 24vw;
+
+        & .bk_container {
+            & img {
+                width: 45.56vw;
+            }
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        margin-top: -105px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 510px;
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }

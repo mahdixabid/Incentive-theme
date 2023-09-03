@@ -1,6 +1,7 @@
 #Incentive_block_06 {
     z-index: 2;
     margin-bottom: 3vw;
+
     & .block_header {}
 
     & .map_hotspot {
@@ -113,4 +114,104 @@
 
         }
     }
+
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .tunisia {
+            & img {
+                position: absolute;
+                top: 9.2vw;
+                left: 40.7vw;
+                width: 1vw;
+                filter: brightness(0.5);
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+
+            & .country_box {
+                left: 41.1vw;
+                top: 2.5vw;
+            }
+        }
+
+        & .canada {
+            & img {
+                position: absolute;
+                top: 8vw;
+                left: 6.7vw;
+                width: 14.8vw;
+                filter: brightness(0.5);
+                transition: all 0.3s;
+                cursor: pointer;
+
+            }
+
+            & .country_box {
+                left: 12.1vw;
+                top: 1.8vw;
+            }
+        }
+
+
+        & .belgium {
+            & img {
+                position: absolute;
+                top: 6vw;
+                left: 40.3vw;
+                width: 2vw;
+                filter: brightness(0.5);
+                transition: all 0.3s;
+                cursor: pointer;
+
+            }
+
+            & .country_box {
+                left: 41.1vw;
+                top: -0.8vw;
+            }
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .line_info {
+            display: none !important;
+        }
+
+        & .country_box {
+            height: fit-content !important;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            max-width: 250px;
+        }
+
+        & .canada {
+            .country_box {
+                left: 0px !important;
+                top: -73px !important;
+            }
+        }
+
+        & .belgium {
+            & .country_box {
+                left: 41px !important;
+                top: -73px !important;
+            }
+        }
+
+        & .tunisia {
+            & .country_box {
+                left: 20px !important;
+                top: -87px !important;
+            }
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }

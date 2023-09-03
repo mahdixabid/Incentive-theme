@@ -21,13 +21,15 @@
 
         & .swiper-wrapper {
             align-items: center;
+
             & .swiper-slide {
                 display: flex;
                 justify-content: center;
-                width: 350px !important;
-                & img {
-                    width: 11vw;
-                }
+                // width: 350px !important;
+
+                // & img {
+                //     width: 11vw;
+                // }
             }
         }
     }
@@ -44,6 +46,20 @@
                 min-height: 2.4vw;
                 max-width: 8vw;
                 max-height: 8vw;
+            }
+        }
+
+        & .swiper-wrapper {
+            align-items: center;
+
+            & .swiper-slide {
+                display: flex;
+                justify-content: center;
+                width: 350px !important;
+
+                & img {
+                    width: 11vw;
+                }
             }
         }
     }

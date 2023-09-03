@@ -1,11 +1,11 @@
 #Incentive_block_03 {
-    min-height: 50vw;
+    overflow: hidden;
 
     & .cards_container {
         position: relative;
 
         & .single_card {
-            width: 35.42vw;
+            // width: 35.42vw;
             aspect-ratio: 1/1;
             background-color: $background_bleu;
             position: absolute;
@@ -18,6 +18,77 @@
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
+
+            // &:nth-of-type(1) {
+            //     // z-index: 7;
+            //     // left: 0;
+            // }
+
+            // &:nth-of-type(2) {
+            //     z-index: 6;
+            //     // left: 9vw;
+            // }
+
+            // &:nth-of-type(3) {
+            //     z-index: 5;
+            //     // left: 16vw;
+            // }
+
+            // &:nth-of-type(4) {
+            //     z-index: 4;
+            //     // left: 23vw;
+            // }
+
+            // &:nth-of-type(5) {
+            //     z-index: 3;
+            //     // left: 30vw;
+            // }
+
+            // &:nth-of-type(6) {
+            //     z-index: 2;
+            //     // left: 37vw;
+            // }
+
+            // &:nth-of-type(7) {
+            //     z-index: 1;
+            //     // left: 45.8vw;
+            // }
+
+            &:hover {
+                z-index: 8;
+                // transform: translateY(-1vw);
+            }
+
+            & .card_header {}
+
+            & .card_body {}
+
+            & .card_footer {
+                justify-content: space-between;
+                align-items: center;
+
+                & p {
+                    opacity: 0.5;
+                }
+
+                & img {
+                    // width: 17vw;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    // Desktop
+    @media (min-width: 992px) {
+        min-height: 50vw;
+
+        & .cards_mobile {
+            display: none !important;
+        }
+
+        & .single_card {
+            width: 35.42vw;
 
             &:nth-of-type(1) {
                 z-index: 7;
@@ -64,18 +135,73 @@
             & .card_body {}
 
             & .card_footer {
-                justify-content: space-between;
-                align-items: center;
-
                 & p {
                     font-size: 8.33vw;
-                    opacity: 0.5;
-                }
-                & img {
-                    width: 17vw;
-                    object-fit: cover;
                 }
             }
         }
     }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        padding-bottom: 60px;
+
+        .cards_desktop {
+            display: none !important;
+        }
+
+        & .cards_container {
+            display: flex;
+            justify-content: center;
+
+            & .single_card {
+                box-shadow: unset !important;
+                width: 80%;
+                margin: 0 auto;
+                position: relative !important;
+
+                & .card_header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                & .card_body {}
+
+                & .card_footer {
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & p {
+                        opacity: 0.5;
+                        font-size: 40px;
+                    }
+
+                    & img {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & .swiper-pagination {
+            bottom: -2rem;
+
+            & .swiper-pagination-bullet {
+                background-color: $white-color !important;
+            }
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {
+        & .card_body {
+            & .p16 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }

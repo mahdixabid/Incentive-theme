@@ -9,7 +9,7 @@ function Incentive_block_02()
             <p class="p60 white uper w-900">NOS <span class="bleu"><u>valeurs</u></span></p>
             <img class="toggle_btn" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/lines_circle.svg"?>">
         </div>
-        <div class="right_block fl_col">.
+        <div class="right_block fl_col">
             <div class="list_item fl_row gp40">
                 <div class="number"><p class="p18 white w-900 pd10-r-l pd10-t-b">01</p></div>
                 <div class="list_text fl_col gp10">

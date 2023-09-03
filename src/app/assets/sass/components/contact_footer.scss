@@ -14,7 +14,7 @@
         padding-bottom: 0 !important;
 
         & .form_section {
-            width: 37.5vw;
+            // width: 37.5vw;
 
             & div {
                 width: 100%;
@@ -30,8 +30,6 @@
                 }
 
                 & .frm_fields_container {
-                    display: flex;
-                    flex-direction: column;
                     gap: $s40-desktop;
 
                     & input,
@@ -39,36 +37,22 @@
                         background-color: transparent !important;
                         border-bottom: solid $white-color !important;
                         border-width: 0 0 1px 0;
-                        font-size: $p21 !important;
-                        padding: $s5-desktop !important;
                         border-radius: unset !important;
                         width: 100%;
                         box-shadow: unset !important;
                         color: $white-color !important;
 
                     }
-
-                    & input {
-                        height: 4.13vw !important;
-                    }
-
-                    textarea {
-                        min-height: 4.13vw !important;
-                        max-height: 12vw !important;
-                    }
                 }
 
                 & .frm_button_submit {
                     box-shadow: unset !important;
-                    padding: $s10-desktop $s40-desktop !important;
                     background-color: transparent !important;
                     color: $white-color !important;
                     border: 1px solid $bleu-color !important;
                     transition: all 0.3s;
-                    font-size: $p14 !important;
                     font-weight: bold;
                     text-transform: uppercase;
-                    width: 13.33vw !important;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -80,14 +64,62 @@
             }
         }
 
+
+    }
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .form_section {
+            width: 37.5vw;
+
+            & .frm_fields_container {
+                gap: $s40-desktop;
+
+                & input,
+                textarea {
+                    height: 4.13vw !important;
+                    padding: $s5-desktop !important;
+                    font-size: $p21 !important;
+
+
+                }
+
+                textarea {
+                    min-height: 4.13vw !important;
+
+
+                }
+
+                & .frm_button_submit {
+                    width: 13.33vw !important;
+                    padding: $s10-desktop $s40-desktop !important;
+                    font-size: $p14 !important;
+                }
+            }
+        }
+
         & .telegram_element {
             width: 25vw;
             margin: unset !important;
-
-            // & .circle {
-            //     height: 100px !important;
-            //     width: 100px !important;
-            // }
         }
     }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .form_section {
+            gap: 40px !important;
+        }
+
+        & .telegram_element {
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }
