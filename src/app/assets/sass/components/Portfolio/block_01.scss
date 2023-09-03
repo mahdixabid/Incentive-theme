@@ -1,6 +1,5 @@
 #Portfolio_block_01 {
-    padding-top: 4.51vw;
-    padding-bottom: 8.51vw;
+
 
     overflow: hidden;
     gap: 3.47vw;
@@ -29,18 +28,18 @@
                     display: flex;
 
                     & .wpc-filter-title {
-                        font-size: $p14;
+                        // font-size: $p14;
                     }
                 }
 
                 & ul {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: $s20-desktop;
+                    // gap: $s20-desktop;
 
                     & a {
                         font-weight: $w-600;
-                        font-size: $p14 !important;
+                        // font-size: $p14 !important;
                         display: flex;
                         align-items: center;
                     }
@@ -58,7 +57,7 @@
                     & li {
                         display: flex;
                         align-items: center;
-                        gap: $s20-desktop;
+                        // gap: $s20-desktop;
 
                         &::before {
                             content: "/";
@@ -144,6 +143,27 @@
 
     // Desktop
     @media (min-width: 992px) {
+        padding-top: 4.51vw;
+        padding-bottom: 8.51vw;
+
+        & .wpc-filters-section {
+            gap: $s40-desktop;
+
+            & .wpc-filter-header {
+
+                & .wpc-filter-title {
+                    font-size: $p14;
+                }
+            }
+
+            & ul {
+                gap: $s20-desktop;
+
+                & a {
+                    font-size: $p14 !important;
+                }
+            }
+        }
 
         & .swiper-pagination {
             width: 3.55vw !important;
@@ -166,8 +186,18 @@
 
     //Tablet & Mobile =>
     @media (max-width: 992px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
         padding-left: unset !important;
         padding-right: unset !important;
+
+        & .wpc-filters-section {
+            flex-direction: column;
+        }
+
+        & .wpc-filters-ul-list {
+            gap: 20px;
+        }
 
         & .swiper-slide {
             height: 60vh;
@@ -177,6 +207,30 @@
             & .p16 {
                 max-width: 80vw;
             }
+        }
+
+        & .filter_container {
+            width: 100% !important;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+
+            & .filter_elements {
+                padding: 20px !important;
+
+                & .wpc-filters-section ul li {
+                    gap: 5px;
+                }
+
+                & p,
+                a,
+                label {
+                    font-size: 16px !important;
+                }
+            }
+
+            & .wpc-filter-title,
+            .wpc-filters-section ul a {}
         }
     }
 

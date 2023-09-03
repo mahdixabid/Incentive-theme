@@ -4,14 +4,7 @@
     & .recrutement-post {
         justify-content: space-between;
 
-        & .left_block {
-            max-width: 21.32vw;
 
-        }
-
-        & .right_block {
-            max-width: 53.6vw;
-        }
     }
 
     & .line_diver {
@@ -36,6 +29,42 @@
             }
         }
     }
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .left_block {
+            max-width: 21.32vw;
+
+        }
+
+        & .right_block {
+            max-width: 53.6vw;
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .btn_light {
+            width: 250px !important;
+
+            & p {
+                width: 100%;
+                height: 45px !important;
+
+            }
+
+        }
+
+        hr {
+            width: 100vw !important;
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }
 
 #Current_Recrutement_Post {
@@ -56,6 +85,8 @@
             background-color: $background_bleu;
             flex: 1;
             border-radius: 1.74vw;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
         }
     }
 
@@ -100,7 +131,7 @@
                     top: $s10-desktop;
                     right: $s10-desktop;
                     cursor: pointer;
-                    width: 2.08vw;
+                    // width: 2.08vw;
                 }
 
                 & .form {
@@ -115,15 +146,15 @@
                     & .frm_fields_container {
                         display: flex;
                         flex-direction: column;
-                        gap: $s10-desktop;
+                        // gap: $s10-desktop;
 
                         & input,
                         textarea {
                             background-color: transparent !important;
                             border-bottom: solid $white-color !important;
                             border-width: 0 0 1px 0;
-                            font-size: $p21 !important;
-                            padding: $s5-desktop !important;
+                            // font-size: $p21 !important;
+                            // padding: $s5-desktop !important;
                             border-radius: unset !important;
                             // width: 100%;
                             box-shadow: unset !important;
@@ -132,12 +163,12 @@
                         }
 
                         & input {
-                            height: 4.13vw !important;
+                            // height: 4.13vw !important;
                         }
 
                         textarea {
-                            min-height: 4.13vw !important;
-                            max-height: 12vw !important;
+                            // min-height: 4.13vw !important;
+                            // max-height: 12vw !important;
                         }
                     }
 
@@ -176,15 +207,15 @@
 
                 & .frm_button_submit {
                     box-shadow: unset !important;
-                    padding: $s10-desktop $s40-desktop !important;
+                    // padding: $s10-desktop $s40-desktop !important;
                     background-color: transparent !important;
                     color: $white-color !important;
                     border: 1px solid $bleu-color !important;
                     transition: all 0.3s;
-                    font-size: $p14 !important;
+                    // font-size: $p14 !important;
                     font-weight: bold;
                     text-transform: uppercase;
-                    width: 13.33vw !important;
+                    // width: 13.33vw !important;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -197,4 +228,132 @@
 
         }
     }
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .postuler_popup {
+
+            & .overlay_popup {
+
+
+                & .popup {
+
+                    & .close_btn {
+                        top: $s10-desktop;
+                        right: $s10-desktop;
+                    }
+
+                    & .form {
+
+                        & .frm_fields_container {
+                            gap: $s10-desktop;
+
+                            & input,
+                            textarea {
+                                font-size: $p21 !important;
+                                padding: $s5-desktop !important;
+                                width: 100%;
+                            }
+
+                            & input {
+                                height: 4.13vw !important;
+                            }
+
+                            textarea {
+                                min-height: 4.13vw !important;
+                                max-height: 12vw !important;
+                            }
+                        }
+                    }
+                }
+
+                & .frm_submit {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & .frm_button_submit {
+                        box-shadow: unset !important;
+                        padding: $s10-desktop $s40-desktop !important;
+                        background-color: transparent !important;
+                        color: $white-color !important;
+                        border: 1px solid $bleu-color !important;
+                        transition: all 0.3s;
+                        font-size: $p14 !important;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        width: 13.33vw !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            background-color: $bleu-color !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        padding: unset !important;
+
+        & .bk_top {
+            height: 250px !important;
+        }
+
+        & .post_data {
+            flex-direction: column;
+            gap: 40px;
+            padding-bottom: unset !important;
+        }
+
+        & .left_block,
+        .right_block {
+            max-width: unset !important;
+            margin: 0 20px;
+        }
+
+        .postuler_popup {
+            padding-bottom: 40px;
+        }
+
+        & .btn_light {
+            & p {
+                width: 200px !important;
+                height: 50px !important;
+            }
+        }
+
+        & .popup {
+            width: 90% !important;
+
+            & input {
+                height: 40px !important;
+            }
+
+            & input,
+            textarea {
+                font-size: unset !important;
+            }
+        }
+
+        & .close_btn {
+            top: 10px !important;
+            right: 10px !important;
+            width: 25px !important;
+        }
+
+        & .frm_button_submit {
+            width: 150px !important;
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }

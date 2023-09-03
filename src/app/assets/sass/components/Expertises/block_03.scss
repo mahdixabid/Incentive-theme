@@ -1,16 +1,15 @@
 #Expertises_block_03 {
-    margin-top: 3vw;
+
     & .List_experises {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6vw $s40-desktop;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 6vw $s40-desktop;
 
         & .Single_card {
             background-color: #171717;
             position: relative;
             border-radius: 30px;
             // width: 24vw;
-            height: 32.85vw;
             cursor: pointer;
             transition: all 0.3s;
 
@@ -20,14 +19,14 @@
 
             & .card_header {
                 & img {
-                    width: 8.55vw;
+                    // width: 8.55vw;
                     object-fit: cover;
                     position: absolute;
-                    left: 2.78vw;
+                    // left: 2.78vw;
                     -o-object-fit: cover;
                     object-fit: cover;
-                    top: -3.13vw;
-                    width: 8.54vw;
+                    // top: -3.13vw;
+                    // width: 8.54vw;
                 }
             }
 
@@ -37,6 +36,74 @@
 
             &:hover {
                 background-color: $background_bleu;
+            }
+        }
+    }
+
+    // Desktop
+    @media (min-width: 992px) {
+        margin-top: 3vw;
+
+        & .List_experises {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6vw $s40-desktop;
+
+            & .single_card {
+                height: 32.85vw;
+
+                & .card_header {
+                    & img {
+                        width: 8.55vw;
+                        left: 2.78vw;
+                        top: -3.13vw;
+                        width: 8.54vw;
+                    }
+                }
+            }
+        }
+    }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {
+        & .List_experises {
+            gap: 85px;
+            margin-top: 20px;
+        }
+
+
+
+        & .Single_card {
+            background-color: $background_bleu !important;
+            height: 450px !important;
+
+            & .card_header {
+                & img {
+                    width: 100px;
+                    left: 20px;
+                    top: -65px;
+                }
+            }
+        }
+    }
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {
+        & .List_experises {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px 20px;
+        }
+    }
+
+    //Mobile =>
+    @media (max-width: 767px) {
+        & .List_experises {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 80px;
+
+            & .mx10 {
+                -webkit-line-clamp: 15 !important;
+                line-clamp: 10 !important;
             }
         }
     }

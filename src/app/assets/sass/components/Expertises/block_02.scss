@@ -1,8 +1,29 @@
 #Expertises_block_02 {
     & .wrapper {
         justify-content: space-between;
-        & .p18 {
-            max-width: 37.5vw;
+
+        // & .p18 {
+        //     max-width: 37.5vw;
+        // }
+    }
+
+    // Desktop
+    @media (min-width: 992px) {
+        & .wrapper {
+            justify-content: space-between;
+
+            & .p18 {
+                max-width: 37.5vw;
+            }
         }
     }
+
+    //Tablet & Mobile =>
+    @media (max-width: 992px) {}
+
+    //Tablet =>
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    //Mobile =>
+    @media (max-width: 767px) {}
 }
