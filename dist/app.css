@@ -2022,14 +2022,10 @@ strong {
     width: 150px !important;
   }
 }
-#contact_page .top_contact .block_text {
-  max-width: 61.5vw;
-}
 #contact_page .contact_form {
   align-items: center;
 }
 #contact_page .contact_form .left_block img {
-  width: 37.64vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2055,31 +2051,19 @@ strong {
   background-color: transparent !important;
   border-bottom: solid #F9F9F9 !important;
   border-width: 0 0 1px 0;
-  font-size: 1.46vw !important;
-  padding: 0.35vw !important;
   border-radius: unset !important;
   width: 100%;
   box-shadow: unset !important;
   color: #F9F9F9 !important;
 }
-#contact_page .contact_form .right_block .frm_fields_container input {
-  height: 4.13vw !important;
-}
-#contact_page .contact_form .right_block .frm_fields_container textarea {
-  min-height: 4.13vw !important;
-  max-height: 12vw !important;
-}
 #contact_page .contact_form .right_block .frm_button_submit {
   box-shadow: unset !important;
-  padding: 0.69vw 2.78vw !important;
   background-color: transparent !important;
   color: #F9F9F9 !important;
   border: 1px solid #00B7E9 !important;
   transition: all 0.3s;
-  font-size: 0.97vw !important;
   font-weight: bold;
   text-transform: uppercase;
-  width: 13.33vw !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2087,7 +2071,44 @@ strong {
 #contact_page .contact_form .right_block .frm_button_submit:hover {
   background-color: #00B7E9 !important;
 }
-
+@media (min-width: 992px) {
+  #contact_page .top_contact .block_text {
+    max-width: 61.5vw;
+  }
+  #contact_page .contact_form {
+    align-items: center;
+  }
+  #contact_page .contact_form .left_block img {
+    width: 37.64vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #contact_page .frm_fields_container input,
+  #contact_page .frm_fields_container textarea {
+    font-size: 1.46vw !important;
+    padding: 0.35vw !important;
+  }
+  #contact_page .frm_fields_container input {
+    height: 4.13vw !important;
+  }
+  #contact_page .frm_fields_container textarea {
+    min-height: 4.13vw !important;
+    max-height: 12vw !important;
+  }
+  #contact_page .frm_button_submit {
+    box-shadow: unset !important;
+    padding: 0.69vw 2.78vw !important;
+    width: 13.33vw !important;
+    font-size: 0.97vw !important;
+  }
+}
+@media (max-width: 992px) {
+  #contact_page .block_element {
+    position: absolute;
+    bottom: 74px;
+    left: 57%;
+  }
+}
 #Incentive_block_01 .wrapper {
   justify-content: space-between;
 }
