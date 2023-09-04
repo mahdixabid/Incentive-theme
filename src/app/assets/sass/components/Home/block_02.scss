@@ -42,7 +42,8 @@
     // Desktop
     @media (min-width: 992px) {
         & .left_block {
-            height: 30vw;
+            height: 21vw;
+            aspect-ratio: 1/1;
 
             & & img {
                 width: 23.9vw;

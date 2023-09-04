@@ -610,7 +610,7 @@ strong {
 }
 @media (max-width: 992px) {
   .btn_light p {
-    height: 62px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1098,7 +1098,7 @@ strong {
   }
   #Primary_block .btn_light a,
   #Primary_block .btn_light p {
-    width: 77% !important;
+    width: 65% !important;
   }
 }
 #Home_block_02 .left_block {
@@ -1126,7 +1126,8 @@ strong {
 }
 @media (min-width: 992px) {
   #Home_block_02 .left_block {
-    height: 30vw;
+    height: 21vw;
+    aspect-ratio: 1/1;
   }
   #Home_block_02 .left_block #Home_block_02 .left_block img {
     width: 23.9vw;
@@ -1302,6 +1303,46 @@ strong {
      object-fit: cover;
   z-index: -1;
   filter: brightness(0.5);
+}
+#Home_block_06 .mySwiper_portfolio .swiper-slide .scroll_bar_item {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  gap: 40px;
+}
+#Home_block_06 .mySwiper_portfolio .swiper-slide .scroll_bar_item p {
+  transform: rotate(-90deg);
+}
+#Home_block_06 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item {
+  align-items: center;
+  position: relative;
+}
+#Home_block_06 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item .base {
+  width: 10px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  animation: scroll 5s ease infinite;
+}
+@keyframes scroll {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(80px);
+  }
+}
+#Home_block_06 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item .line {
+  width: 2px;
+  height: 120px;
+  background-color: #F9F9F9;
 }
 #Home_block_06 .mySwiper_portfolio .swiper-pagination {
   position: absolute;
@@ -1538,12 +1579,24 @@ strong {
     grid-template-columns: repeat(3, 1fr);
     gap: 6vw 2.78vw;
   }
-  #Expertises_block_03 .List_experises .single_card {
+  #Expertises_block_03 .List_experises .Single_card {
+    background-color: #171717;
+    position: relative;
+    border-radius: 30px;
     height: 32.85vw;
+    cursor: pointer;
+    transition: all 0.3s;
   }
-  #Expertises_block_03 .List_experises .single_card .card_header img {
+  #Expertises_block_03 .List_experises .Single_card p {
+    color: white;
+  }
+  #Expertises_block_03 .List_experises .Single_card .card_header img {
     width: 8.55vw;
+    object-fit: cover;
+    position: absolute;
     left: 2.78vw;
+    -o-object-fit: cover;
+    object-fit: cover;
     top: -3.13vw;
     width: 8.54vw;
   }
@@ -1625,6 +1678,7 @@ strong {
 #Portfolio_block_01 .filter_container .filter_elements .wpc-filters-section ul li {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 #Portfolio_block_01 .filter_container .filter_elements .wpc-filters-section ul li::before {
   content: "/";
@@ -1641,6 +1695,46 @@ strong {
 #Portfolio_block_01 .mySwiper_portfolio .swiper-slide {
   padding: 0 0 5vw 5vw;
   justify-content: flex-end;
+}
+#Portfolio_block_01 .mySwiper_portfolio .swiper-slide .scroll_bar_item {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  gap: 40px;
+}
+#Portfolio_block_01 .mySwiper_portfolio .swiper-slide .scroll_bar_item p {
+  transform: rotate(-90deg);
+}
+#Portfolio_block_01 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item {
+  align-items: center;
+  position: relative;
+}
+#Portfolio_block_01 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item .base {
+  width: 10px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  animation: scroll 5s ease infinite;
+}
+@keyframes scroll {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(80px);
+  }
+}
+#Portfolio_block_01 .mySwiper_portfolio .swiper-slide .scroll_bar_item .scroll_item .line {
+  width: 2px;
+  height: 120px;
+  background-color: #F9F9F9;
 }
 #Portfolio_block_01 .mySwiper_portfolio .swiper-slide .bk_item {
   position: absolute;

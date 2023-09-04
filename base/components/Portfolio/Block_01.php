@@ -25,6 +25,13 @@ function Portfolio_block_01() {
                 while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
                   ?>
                     <div class="swiper-slide gp10 fl_col">
+                      <div class="scroll_bar_item fl_col gp20">
+                          <p class="p14 white w-700 uper">scroll</p>
+                          <div class="scroll_item fl_col">
+                            <div class="base"></div>
+                            <div class="line"></div>
+                          </div>
+                        </div>
                         <img class="bk_item" src="<?php echo the_field('image_portfolio') ?>">
                         <p class="p18 bleu"><?php the_field('technology_portfolio'); ?></p>
                         <p class="p32 white w-900"><?php the_field('project_title_portfolio'); ?></p>

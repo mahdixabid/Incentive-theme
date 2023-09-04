@@ -46,3 +46,13 @@ if (close_btn_popup) {
     })
 }
 
+
+
+
+var currentURL = window.location.href;
+if (currentURL.includes("project__type")) {
+  var element = document.querySelector("#Portfolio_block_01");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}

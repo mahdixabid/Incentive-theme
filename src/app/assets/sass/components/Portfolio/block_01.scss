@@ -57,6 +57,7 @@
                     & li {
                         display: flex;
                         align-items: center;
+                        gap: 20px;
                         // gap: $s20-desktop;
 
                         &::before {
@@ -86,6 +87,55 @@
             // height: 42.43vw;
             padding: 0 0 5vw 5vw;
             justify-content: flex-end;
+
+            & .scroll_bar_item {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                align-items: center;
+                gap: 40px;
+
+                & p {
+                    transform: rotate(-90deg);
+                }
+
+                & .scroll_item {
+                    align-items: center;
+                    position: relative;
+
+                    & .base {
+                        width: 10px;
+                        height: 40px;
+                        border-radius: 25px;
+                        background-color: $white-color;
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+                        transition: all 0.3s;
+                        animation: scroll 5s ease infinite;
+                    }
+
+                    @keyframes scroll {
+
+                        0%,
+                        100% {
+                            transform: translateX(-50%) translateY(0);
+                        }
+
+                        50% {
+                            transform: translateX(-50%) translateY(80px);
+                        }
+                    }
+
+                    & .line {
+                        width: 2px;
+                        height: 120px;
+                        background-color: $white-color;
+                    }
+                }
+            }
 
             & .bk_item {
                 position: absolute;

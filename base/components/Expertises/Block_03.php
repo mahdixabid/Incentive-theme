@@ -19,11 +19,11 @@ function Expertises_block_03()
         while ($expertises_query->have_posts()): $expertises_query->the_post();
             $counter_formatted = sprintf("%02d", $counter);
             ?>
-		                    <div class="Single_card pd40 gp10 fl_col">
-		                        <div class="card_header">
+		                    <div class="Single_card  gp10 fl_col">
+		                        <div class="card_header pd20-t-b pd40-r-l">
 		                            <img class="icon" src="<?php echo the_field('icon_expertises') ?>">
 		                        </div>
-                                <div class="card_body fl_col gp10">
+                                <div class="card_body pd20 fl_col gp10">
                                     <p class="p32 mx2 w-900"><?php the_field('title_expertises');?></p>
                                     <p class="p16 mx10"><?php the_field('description_expertises');?></p>
                                 </div>

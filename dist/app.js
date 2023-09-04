@@ -55,6 +55,15 @@ if (close_btn_popup) {
     popup_container.classList.add("hide");
   });
 }
+var currentURL = window.location.href;
+if (currentURL.includes("project__type")) {
+  var element = document.querySelector("#Portfolio_block_01");
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+}
 
 /***/ }),
 
