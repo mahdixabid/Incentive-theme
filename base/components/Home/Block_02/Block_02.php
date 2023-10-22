@@ -18,7 +18,7 @@ function Home_block_02() {
             </p>
         </div>
         <div class="btn_light large_btn">
-            <a href="<?php echo $home . ""; ?>">
+            <a href="<?php echo $home . "incentive"; ?>">
                 <p class="p14 uper">DECOUVRIR INCENTIVE SOLUTIONS</p>
             </a>
         </div>

@@ -11,7 +11,12 @@ function telegram()
       z-index: 3;
       transform: translateY(-4vw);
     }
-
+    .telegram .svg-box {
+      transition: all 0.3s;
+    }
+    .telegram .svg-box:hover {
+      transform:scale(1.1)
+    }
     #paper-plane {
     width: 4.44vw;
     height:4.44vw;
@@ -148,15 +153,14 @@ function telegram()
     }
  </style>
  <div class="telegram">
+  <a href="<?php echo $home . "contact"; ?>">
     <div class="svg-box">
-    <svg id="paper-plane" xmlns="http://www.w3.org/2000/svg" width="90.297" height="86.535" viewBox="0 0 90.297 86.535">
-  <path id="Path_49275" data-name="Path 49275" d="M8.75,17.612v17.45a2.821,2.821,0,0,0,5.094,1.67L24.052,22.842Z" transform="translate(24.171 48.651)" fill="#00b7e9"/>
-  <path id="Path_49276" data-name="Path 49276" d="M89.112.523A2.823,2.823,0,0,0,86.17.32L1.516,44.528A2.823,2.823,0,0,0,1.908,49.7l23.534,8.044L75.56,14.892,36.777,61.617,76.218,75.1a2.887,2.887,0,0,0,.91.15,2.819,2.819,0,0,0,2.792-2.4L90.267,3.24A2.827,2.827,0,0,0,89.112.523Z" transform="translate(0 0)" fill="#00b7e9"/>
-</svg>
-
-
-
+      <svg id="paper-plane" xmlns="http://www.w3.org/2000/svg" width="90.297" height="86.535" viewBox="0 0 90.297 86.535">
+        <path id="Path_49275" data-name="Path 49275" d="M8.75,17.612v17.45a2.821,2.821,0,0,0,5.094,1.67L24.052,22.842Z" transform="translate(24.171 48.651)" fill="#00b7e9"/>
+        <path id="Path_49276" data-name="Path 49276" d="M89.112.523A2.823,2.823,0,0,0,86.17.32L1.516,44.528A2.823,2.823,0,0,0,1.908,49.7l23.534,8.044L75.56,14.892,36.777,61.617,76.218,75.1a2.887,2.887,0,0,0,.91.15,2.819,2.819,0,0,0,2.792-2.4L90.267,3.24A2.827,2.827,0,0,0,89.112.523Z" transform="translate(0 0)" fill="#00b7e9"/>
+      </svg>
     </div>
+  </a>
     <div class="circle delay1"></div>
     <div class="circle delay2"></div>
     <div class="circle delay3"></div>

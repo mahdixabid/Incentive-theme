@@ -8,7 +8,7 @@ function Incentive_block_04()
             <div class="block_header fl_col gp30">
                 <p class="p60 white w-900">Notre <br> <span class="bleu uper"><u>METHODOLOGIE</u></span></p>
                 <p class="p18 white w-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec felis gravida, efficitur felis id, feugiat velit. Fusce bibendum, ex et tincidunt volutpat, magna enim vestibulum massa, at semper velit dui sed nulla. Aliquam a mauris velit. Ut in risus dolor. Donec sollicitudin ullamcorper neque, vitae ornare nisl ornare vel. Curabitur sed est leo.
+                Chez Incentive Solutions nous croyons en l'approche agile. D’ailleurs, nous encourageons la collaboration et l'implication de nos clients dans le processus de développement, afin de mieux comprendre leurs besoins et leurs attentes. Ensemble, nous créons des solutions web performantes et innovantes.
                 </p>
             </div>
             <div class="schema fl_col gp40">

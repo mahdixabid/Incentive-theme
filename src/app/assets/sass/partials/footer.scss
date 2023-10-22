@@ -136,6 +136,13 @@
             justify-content: center;
             gap: 40px;
         }
+        & .social_media {
+            & .fl_row {
+                & img {
+                    width: 20px;
+                }
+            }
+        }
     }
 
     //Tablet =>

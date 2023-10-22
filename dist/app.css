@@ -617,11 +617,56 @@ strong {
   }
 }
 
+.jc {
+  justify-content: center;
+}
+
 .large_btn p {
   padding-right: 2.08vw !important;
   padding-left: 2.08vw !important;
 }
 
+#Home_block_06 {
+  display: none !important;
+}
+
+#load-more {
+  border: unset !important;
+  background-color: unset !important;
+  outline: unset !important;
+}
+#load-more:hover {
+  border: unset !important;
+  background-color: unset !important;
+  outline: unset !important;
+}
+
+.loading-animation {
+  display: none;
+  text-align: center;
+}
+
+.loading-circle {
+  border: 4px solid #ffffff;
+  /* White border */
+  border-top: 4px solid transparent;
+  /* Transparent top border */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  /* Add a spinning animation */
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #header {
   width: 100%;
   position: relative;
@@ -893,6 +938,9 @@ strong {
     display: flex;
     justify-content: center;
     gap: 40px;
+  }
+  #footer .social_media .fl_row img {
+    width: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1195,6 +1243,7 @@ strong {
   padding-top: 8.51vw;
   margin-left: 9vw;
   overflow: hidden;
+  position: relative;
 }
 #Home_block_05 .mySwiper_expertises {
   overflow: unset !important;
@@ -1239,6 +1288,30 @@ strong {
 #Home_block_05 .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: #00B7E9 !important;
 }
+#Home_block_05 .remote_swiper {
+  display: flex;
+  gap: 3vw;
+  position: absolute;
+  bottom: 1.1vw;
+  right: 50vw;
+  align-items: center;
+  z-index: 5;
+}
+#Home_block_05 .remote_swiper .swiper-button-next_expertise {
+  display: flex;
+  flex-direction: row-reverse !important;
+  align-items: center;
+  gap: 1vw;
+}
+#Home_block_05 .remote_swiper img {
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 3vw;
+  aspect-ratio: 1/1;
+}
+#Home_block_05 .remote_swiper img:hover {
+  transform: scale(1.1);
+}
 @media (min-width: 992px) {
   #Home_block_05 {
     padding-left: unset !important;
@@ -1265,7 +1338,7 @@ strong {
 }
 @media (max-width: 992px) {
   #Home_block_05 {
-    padding-bottom: 8.51vw;
+    padding-bottom: 100px;
     margin: unset !important;
   }
   #Home_block_05 .icon {
@@ -1273,10 +1346,18 @@ strong {
     width: 20vw;
   }
   #Home_block_05 .swiper-scrollbar {
-    bottom: -7vw !important;
+    bottom: -76px !important;
   }
   #Home_block_05 .swiper {
     height: 430px !important;
+  }
+  #Home_block_05 .remote_swiper {
+    left: 0 !important;
+    right: unset !important;
+    bottom: -47px;
+  }
+  #Home_block_05 .remote_swiper img {
+    width: 50px !important;
   }
 }
 #Home_block_06 {
@@ -1421,6 +1502,7 @@ strong {
 }
 
 #Home_block_07 {
+  padding-top: 8.51vw;
   padding-bottom: 8.51vw;
   overflow: hidden;
   align-items: center;
@@ -2485,12 +2567,10 @@ strong {
   #Incentive_block_05 .Team_listing .card_user .card_info {
     height: 11.8vw;
   }
-  #Incentive_block_05 .Team_listing .card_user:nth-of-type(1) {
-    margin-top: -32vw;
-  }
-  #Incentive_block_05 .Team_listing .card_user:nth-of-type(3) {
-    margin-bottom: -18vw;
-  }
+}
+#Incentive_block_05 .load-more-button {
+  padding-top: 3%;
+  margin: 0 auto;
 }
 @media (max-width: 992px) {
   #Incentive_block_05 {

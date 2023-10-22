@@ -17,19 +17,19 @@ function Home_block_05()
 
     if ($expertises_query->have_posts()):
         $counter = 1;
-
         while ($expertises_query->have_posts()): $expertises_query->the_post();
             $counter_formatted = sprintf("%02d", $counter);
             ?>
-		                    <div class="swiper-slide pd40 gp10 fl_col">
-		                        <div>
-		                          <p class="p60 w-900"><?php echo $counter_formatted; ?></p>
-		                          <img class="icon" src="<?php echo the_field('icon_expertises') ?>">
-		                      </div>
-		                        <div><p class="p32 mx2 w-900"><?php the_field('title_expertises');?></p></div>
-		                        <div><p class="p16"><?php the_field('description_expertises');?></p></div>
-		                    </div>
-		                    <?php
+		        <div class="swiper-slide pd40 gp10 fl_col">
+		            <div>
+		              <p class="p60 w-900"><?php echo $counter_formatted; ?></p>
+		              <img class="icon" src="<?php echo the_field('icon_expertises') ?>">
+		          </div>
+		            <div><p class="p32 mx2 w-900"><?php the_field('title_expertises');?></p></div>
+		            <div><p class="p16"><?php the_field('description_expertises');?></p></div>           
+		        </div>
+
+		        <?php
         $counter++;
         endwhile;
         wp_reset_postdata();
@@ -38,6 +38,14 @@ function Home_block_05()
     endif;
     ?>
 
+</div>
+<div class="remote_swiper">
+    <div class="swiper-button-next_expertise">
+        <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/right-arrow.svg" ?>">
+        <div class="swiper-button-prev_expertise">
+            <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/left-arrow.svg" ?>">
+        </div>
+    </div>
 </div>
 <div class="swiper-scrollbar"></div>
     </div>
@@ -48,10 +56,14 @@ function Home_block_05()
         draggable: true,
         clickable: true,
         spaceBetween: 30,
-        scrollbar: {
+        scrollbar: {    
             el: ".swiper-scrollbar",
             // hide: true,
         },
+        navigation: {
+        nextEl: ".swiper-button-next_expertise",
+        prevEl: ".swiper-button-prev_expertise",
+      },
     };
 
     if (screen.width > 992) {

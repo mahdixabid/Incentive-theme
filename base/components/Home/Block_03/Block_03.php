@@ -4,17 +4,16 @@ function Home_block_03() {
 ?>
 <div id="Home_block_03" class="fl_row container_boxed gp40">
     <div class="fl_col">
-        <p class="w-900 white p36">Lorem</p>
-        <p class="w-900 bleu p60">100+</p>
-        <p class="w-900 white p36">Lorem Ipsum</p>
+        <p class="w-900 bleu p60">+32</p>
+        <p class="w-900 white p36">Clients satisfaits</p>
     </div>
     <div class="fl_col">
-        <p class="w-900 bleu p60">10</p>
-        <p class="w-900 white p36">Lorem Ipsum Dolor Sit Amet</p>
+        <p class="w-900 bleu p60">+24</p>
+        <p class="w-900 white p36">Projets réalisés</p>
     </div>
     <div class="fl_col">
-        <p class="w-900 bleu p60">50</p>
-        <p class="w-900 white p36">Lorem Ipsum Dolor Sit </p>
+        <p class="w-900 bleu p60">+25</p>
+        <p class="w-900 white p36">Talents</p>
     </div>
 </div>
 <?php

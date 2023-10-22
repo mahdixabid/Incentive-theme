@@ -1,4 +1,3 @@
 <?php 
-$home = "http://localhost/incentive";
+$home = "http://localhost/incentive/";
 ?>
-

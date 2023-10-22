@@ -8,7 +8,8 @@ function Incentive_block_06()
             <div class="block_header fl_col gp30">
                 <p class="white p60 w-900">Ou <span class="bleu uper"><u>nous<br> trouver</u></span> ?</p>
                 <p class="p18 white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec felis gravida, efficitur felis id, feugiat velit. Fusce bibendum, ex et tincidunt volutpat, magna enim vestibulum. 
+                Incentive Solutions, une agence digitale locale et proche de vous. <br>
+                Nous sommes fiers de notre présence solide ainsi que de notre portée nationale. Nos bureaux sont stratégiquement situés dans des endroits clés, offrant ainsi une accessibilité maximale à nos clients. 
                 </p>
             </div>
             <div class="map_hotspot">
@@ -25,7 +26,7 @@ function Incentive_block_06()
                             </div>
                         </div>
                     </div>
-                    <div class="country canada">
+                    <div class="country canada hide">
                         <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/canada_map.svg"; ?>">
                         <div class="country_box white fl_row gp20">
                             <div class="line_info"></div>
@@ -37,7 +38,7 @@ function Incentive_block_06()
                         </div>
                     </div>
 
-                    <div class="country belgium">
+                    <div class="country belgium hide">
                         <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/belgium_map.svg"; ?>">
                         <div class="country_box white fl_row gp20">
                             <div class="line_info"></div>

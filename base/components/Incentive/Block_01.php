@@ -8,7 +8,7 @@ function Incentive_block_01()
             <div class="left_block fl_col gp30">
                 <p class="p60 white uper w-900"> UN PARTENAIRE <u class="bleu">technologique</u> !</p>
                 <p class="p18 white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit massa, commodo non turpis eget, tincidunt porta odio. Nam a eros et nisl fringilla accumsan quis vitae enim. Curabitur sed condimentum lacus. Praesent metus nunc, varius ut porta et, laoreet et tortor. Fusce interdum dapibus vestibulum. In quis efficitur ligula. Duis vitae neque pellentesque mauris aliquam ultrices.
+                Partenaire technologique stratégique. Nous sommes des experts en technologies innovantes. Nous vous offrons la meilleure solution grâce à notre expertise métier,  à notre maîtrise des dernières technologies et des meilleures pratiques en marketing pour booster le business de votre marque.
                 </p>
             </div>
             <div class="right_block">

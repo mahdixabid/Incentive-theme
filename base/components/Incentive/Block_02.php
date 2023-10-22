@@ -13,27 +13,27 @@ function Incentive_block_02()
             <div class="list_item fl_row gp40">
                 <div class="number"><p class="p18 white w-900 pd10-r-l pd10-t-b">01</p></div>
                 <div class="list_text fl_col gp10">
-                    <p class="p32 white uper w-900">ACCOMPAGNEMENT</p>
+                    <p class="p32 white uper w-900">Qualité</p>
                     <p class="p18 white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit massa, commodo non turpis eget, tincidunt porta odio. Nam a eros et nisl fringilla accumsan   quis vitae enim.
+                    En s’appuyant sur ses années d’expérience, Incentive s'engage à fournir des solutions personnalisées et à haute performance pour répondre aux besoins de ses clients et améliorer leur réputation.
                     </p>
                 </div>
             </div>
             <div class="list_item fl_row gp40">
                 <div class="number"><p class="p18 white w-900 pd10-r-l pd10-t-b">02</p></div>
                 <div class="list_text fl_col gp10">
-                    <p class="p32 white uper w-900">CONSEIL</p>
+                    <p class="p32 white uper w-900">Transparence</p>
                     <p class="p18 white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit massa, commodo non turpis eget, tincidunt porta odio.
-                    </p>
+                    Nous prônons la transparence dans notre communication avec nos clients, en fournissant des mises à jour régulières sur l'avancement des projets et en étant honnête sur les problèmes et défis rencontrés.
+                </p>
                 </div>
             </div>
             <div class="list_item fl_row gp40">
                 <div class="number"><p class="p18 white w-900 pd10-r-l pd10-t-b">03</p></div>
                 <div class="list_text fl_col gp10">
-                    <p class="p32 white uper w-900">EFFICACITE</p>
+                    <p class="p32 white uper w-900">Responsabilité</p>
                     <p class="p18 white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit massa, commodo non turpis eget, tincidunt porta odio. Nam a eros et nisl fringilla accumsan   quis vitae enim. Curabitur sed condimentum lacus.
+                    Incentive fournit un service de confidentialité et un service après-vente de qualité pour répondre aux questions et aux problèmes rencontrés par les clients après la mise en ligne de leurs sites web ou de leurs applications.
                     </p>
                 </div>
             </div>

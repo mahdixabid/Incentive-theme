@@ -13,10 +13,6 @@ function Prefooter() {
           <p class="p16 white">
           Contactez-nous pour toute demande ou information. Nous sommes à votre disposition pour répondre à vos questions et vous aider dans vos besoins
           </p>
-          <div class="light_btn fl_row gp10">
-            <p class="p16 bleu w-700">En Savoir Plus</p>
-            <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/arrow_right_bleu.svg"; ?>">
-          </div>
         </div>
       </div>
       <div class="block_element">

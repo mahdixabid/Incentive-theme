@@ -5,9 +5,9 @@ function Expertises_block_02()
     ?>
     <div id="Expertises_block_02" class=" container_boxed">
         <div class="wrapper fl_row">
-            <p class="p60 white w-900">NOS <span class="bleu"><u>EXPERTISES</u></span></p>
+            <p class="p60 white w-900">Des compétences<span class="bleu"><u> uniques</u></span></p>
             <p class="p18 white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec felis gravida, efficitur felis id, feugiat velit. Fusce bibendum, ex et tincidunt volutpat, magna enim vestibulum. 
+            Plongez dans l'univers de nos services web sur mesure, taillés spécialement pour combler vos besoins uniques. Explorez nos solutions complètes et personnalisées, qui vous conduisent vers le succès digital. 
             </p>
         </div>
     </div>

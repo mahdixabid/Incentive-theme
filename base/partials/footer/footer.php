@@ -18,15 +18,15 @@ ob_start();
               <div class="contact_info fl_col gp20">
                 <div class="fl_row gp10">
                   <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/location.svg"; ?>">
-                  <p class="p14">1718 Park Boulevard Marshalltown, IA 50158</p>
+                  <p class="p14">Lac 2 avenue de la bourse, immeuble saphir 1E Bloc A-A1-1</p>
                 </div>
                 <div class="fl_row gp10">
                   <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/Icon-Phone.svg"; ?>">
-                  <p class="p14">641-754-0072</p>
+                  <p class="p14">+216 25890242</p>
                 </div>
                 <div class="fl_row gp10">
                   <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/Icon-Message.svg"; ?>">
-                  <p class="p14">GavinEMaki@rhyta.com</p>
+                  <p class="p14">contact@incentivesolutions.tech</p>
                 </div>
               </div>
               <div class="nav_footer white fl_row">
@@ -45,10 +45,9 @@ ob_start();
           </div>
         <div class="social_media fl_col gp20">
           <p class="p16 white">SUIVEZ-NOUS</p>
-          <div class="fl_row gp30">
-            <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/twitter.svg"; ?>">
-            <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/fb.svg"; ?>">
-            <img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/instagram.svg"; ?>">
+          <div class="fl_row gp30 jc">
+            <a href="https://www.linkedin.com/company/incentivesolutions/?viewAsMember=true"><img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/linkedin_icon.svg"; ?>"></a>
+            <a href="https://www.facebook.com/profile.php?id=100088785302244"><img src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/fb.svg"; ?>"></a>
           </div>
         </div>
       </div>

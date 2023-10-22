@@ -2,6 +2,7 @@
     padding-top: 8.51vw;
     margin-left: 9vw;
     overflow: hidden;
+    position: relative;
 
     & .mySwiper_expertises {
         overflow: unset !important;
@@ -65,6 +66,33 @@
         }
     }
 
+    & .remote_swiper {
+        display: flex;
+        gap: 3vw;
+        position: absolute;
+        bottom: 1.1vw;
+        right: 50vw;
+        align-items: center;
+        z-index: 5;
+
+        & .swiper-button-next_expertise {
+            display: flex;
+            flex-direction: row-reverse !important;
+            align-items: center;
+            gap: 1vw;
+        }
+
+        & img {
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 3vw;
+            aspect-ratio: 1/1;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 
     // Desktop
     @media (min-width: 992px) {
@@ -99,7 +127,7 @@
 
     //Tablet & Mobile =>
     @media (max-width: 992px) {
-        padding-bottom: 8.51vw;
+        padding-bottom: 100px;
         margin: unset !important;
 
         & .icon {
@@ -108,11 +136,22 @@
         }
 
         & .swiper-scrollbar {
-            bottom: -7vw !important;
+            bottom: -76px !important;
         }
 
         & .swiper {
             height: 430px !important;
+        }
+
+        & .remote_swiper {
+            // position: relative !important;
+            left: 0 !important;
+            right: unset !important;
+            bottom: -47px;
+
+            & img {
+                width: 50px !important;
+            }
         }
     }
 
