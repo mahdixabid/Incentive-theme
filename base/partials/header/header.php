@@ -2,6 +2,14 @@
 function header_primary()
 {
     require get_template_directory() . '/base/components/path.php';
+    $language_segment = get_locale();
+    $language_segment = substr($language_segment, 0, 2);
+    if ($language_segment == 'fr') {
+        $menu_item = "primary_menu_fr";
+    } else {
+
+        $menu_item = "primary_menu_en";
+    }
 ?>
 <?php
     ob_start();
@@ -17,7 +25,7 @@ function header_primary()
                             <div class="nav_canvas">
                                 <?php
                                 wp_nav_menu([
-                                    "menu" => "primary_menu_primary",
+                                    "menu" => $menu_item,
                                     "container" => "",
                                     "menu_class" => ""
                                 ]);
@@ -36,7 +44,7 @@ function header_primary()
                 <div class="nav_header">
                     <?php
                     wp_nav_menu([
-                        "menu" => "primary_menu_primary",
+                        "menu" => $menu_item,
                         "container" => "",
                         "menu_class" => ""
                     ]);
@@ -62,7 +70,7 @@ function header_primary()
                         <img class="close_btn_mobile" src="<?php echo $home . "/wp-content/themes/hello-elementor/src/app/assets/img/close_btn_white.svg"; ?>">
                         <?php
                         wp_nav_menu([
-                            "menu" => "primary_menu_primary",
+                            "menu" => $menu_item,
                             "container" => "",
                             "menu_class" => ""
                         ]);

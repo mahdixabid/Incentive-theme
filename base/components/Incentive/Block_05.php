@@ -18,8 +18,8 @@ function Incentive_block_05($atts) {
     if ($team_query->have_posts()) :
         echo '<div id="Incentive_block_05" class="container_boxed fl_col">';
         ?> <div class="block_header fl_col gp20">
-            <p class="p60 white w-900">Notre <span class="bleu uper"><u>équipe</u></span></p>
-            <p class="p18 white">Une équipe d'experts disponibles pour vous accompagner de manière personnalisée et durable. </p>
+            <p class="p60 white w-900"><?php echo $GLOBALS['str_21']; ?> <span class="bleu uper"><u><?php echo $GLOBALS['str_22']; ?></u></span></p>
+            <p class="p18 white"><?php echo $GLOBALS['str_23']; ?> </p>
         </div>
         <?php
             echo '<div class="Team_listing white" id="team-listing">';
@@ -51,7 +51,7 @@ function Incentive_block_05($atts) {
             echo '</div>';
             ?>
             <div class="load-more-button btn_light">
-                <button id="load-more"><p>Load More</p></button>
+                <button id="load-more"><p><?php echo $GLOBALS['str_24']; ?></p></button>
                 <div class="loading-animation">
                     <div class="loading-circle"></div>
                 </div>

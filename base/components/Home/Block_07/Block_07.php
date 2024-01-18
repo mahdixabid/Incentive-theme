@@ -5,7 +5,7 @@ function Home_block_07() {
   <div id="Home_block_07" class="container_boxed fl_row">
       <div class="block_title">
           <p class="p60 white  w-900 ">
-              Ils Nous Font  <u class="bleu uper">confiance</u>
+                <?php echo $GLOBALS['str_15']; ?> <u class="bleu uper"> <?php echo $GLOBALS['str_16']; ?></u>
           </p>
       </div>
       <div class="swiper-container logos-slider"> <!-- Wrap the logos in a swiper-container -->

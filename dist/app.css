@@ -2567,6 +2567,13 @@ strong {
   #Incentive_block_05 .Team_listing .card_user .card_info {
     height: 11.8vw;
   }
+  #Incentive_block_05 .Team_listing .card_user:nth-of-type(3n) {
+    margin-bottom: -15vw;
+  }
+  #Incentive_block_05 .Team_listing .card_user:nth-of-type(3n + 1), #Incentive_block_05 .Team_listing .card_user:nth-of-type(3n + 1) {
+    margin-top: -15vw;
+    margin-bottom: 15vw;
+  }
 }
 #Incentive_block_05 .load-more-button {
   padding-top: 3%;

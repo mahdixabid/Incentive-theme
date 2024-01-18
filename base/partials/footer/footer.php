@@ -31,14 +31,14 @@ ob_start();
               </div>
               <div class="nav_footer white fl_row">
                 <div class="fl_col gp10">
-                  <p class="p14">Acceuil</p>
-                  <p class="p14">Incentive</p>
-                  <p class="p14">Nos Réalisations</p>
+                  <a href="/"><p class="p14">Acceuil</p></a>
+                  <a href="/incentive"><p class="p14">Incentive</p></a>
+                  <!-- <a href=""><p class="p14">Nos Réalisations</p></a> -->
                 </div>
                 <div class="fl_col gp10">
-                  <p class="p14">Nos Expertises</p>
-                  <p class="p14">Recrutement</p>
-                  <p class="p14">Contact</p>
+                  <a href="/nos-expertises/"><p class="p14">Nos Expertises</p></a>
+                  <a href="/recrutement-cariere/"><p class="p14">Recrutement</p></a>
+                  <a href="/contact"><p class="p14">Contact</p></a>
                 </div>
               </div>
             </div>

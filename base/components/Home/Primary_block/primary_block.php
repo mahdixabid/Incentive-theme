@@ -4,12 +4,14 @@ function Primary_block() {
 ?>
 <div id="Primary_block" class="fl_row container_boxed">
     <div class="content_block ">
-        <p class="p18 bleu">CREATIVE MIND, CREATIVE WORKS.</p>
+        <p class="p18 bleu">
+         <?php echo $GLOBALS['str_1']; ?>
+        </p>
         <div class="fl_col gp30">
-            <p class="p60 white"><b>Agence de développement web</b></p>
-            <p class="p18 white w-300">Experts en développement web et projet digital, nous proposons à nos clients des solutions innovantes sur-mesure pour une présence en ligne percutante.</p>
+            <p class="p60 white"><b><?php echo $GLOBALS['str_2']; ?></b></p>
+            <p class="p18 white w-300"><?php echo $GLOBALS['str_3']; ?></p>
             <div class="btn_light large_btn">
-                <a href="<?php echo $home . "/contact_us"; ?>"><p class="p14 uper">En savoir plus</p></a>
+                <a href="<?php echo $home . "/contact_us"; ?>"><p class="p14 uper"><?php echo $GLOBALS['str_4']; ?></p></a>
             </div>
         </div>
     </div>
@@ -24,3 +26,6 @@ function Primary_block() {
 
 add_shortcode("Primary_block", "Primary_block");
 ?>
+
+
+

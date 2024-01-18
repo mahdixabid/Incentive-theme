@@ -263,3 +263,19 @@ function loading_Javascript() {
 	  return $mimes;
 	  }
   add_filter( 'upload_mimes', 'my_custom_mime_types' );
+
+
+
+
+  add_filter( 'pll_get_post_types', 'add_other_expertises_cpt_to_pll', 10, 2 );
+
+function add_other_expertises_cpt_to_pll( $post_types, $is_settings ) {
+  if ( $is_settings ) {
+    // Hides 'other_expertises' from the list of custom post types in Polylang settings
+    unset( $post_types['expertises'] );
+  } else {
+    // Enables language and translation management for 'expertises'
+    $post_types['expertises'] = 'expertises';
+  }
+  return $post_types;
+}

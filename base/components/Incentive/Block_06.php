@@ -6,10 +6,9 @@ function Incentive_block_06()
     <div id="Incentive_block_06" class=" container_boxed fl_col gp40">
         <div class="wrapper fl_col gp40">
             <div class="block_header fl_col gp30">
-                <p class="white p60 w-900">Ou <span class="bleu uper"><u>nous<br> trouver</u></span> ?</p>
+                <p class="white p60 w-900"><?php echo $GLOBALS['str_25']; ?> <span class="bleu uper"><u><?php echo $GLOBALS['str_26']; ?><br> <?php echo $GLOBALS['str_27']; ?></u></span> ?</p>
                 <p class="p18 white">
-                Incentive Solutions, une agence digitale locale et proche de vous. <br>
-                Nous sommes fiers de notre présence solide ainsi que de notre portée nationale. Nos bureaux sont stratégiquement situés dans des endroits clés, offrant ainsi une accessibilité maximale à nos clients. 
+                <?php echo $GLOBALS['str_28']; ?> 
                 </p>
             </div>
             <div class="map_hotspot">

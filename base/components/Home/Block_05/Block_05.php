@@ -2,6 +2,16 @@
 function Home_block_05()
 {
     require get_template_directory() . '/base/components/path.php';
+    $language_segment = get_locale();
+    $language_segment = substr($language_segment, 0, 2);
+    if ($language_segment == 'fr') {
+        $title = "title_expertises";
+        $description = "description_expertises";
+    }
+    else {
+        $title = "title_expertises_en";
+        $description = "description_expertises_en";
+    }
     ?>
 <div id="Home_block_05" class="container_boxed">
     <div class="swiper mySwiper_expertises">
@@ -25,8 +35,10 @@ function Home_block_05()
 		              <p class="p60 w-900"><?php echo $counter_formatted; ?></p>
 		              <img class="icon" src="<?php echo the_field('icon_expertises') ?>">
 		          </div>
-		            <div><p class="p32 mx2 w-900"><?php the_field('title_expertises');?></p></div>
-		            <div><p class="p16"><?php the_field('description_expertises');?></p></div>           
+                  <div class="card_body pd20 fl_col gp10">
+                        <p class="p32 mx2 w-900"><?php the_field($title);?></p>
+                        <p class="p16 mx10"><?php the_field($description);?></p>
+                    </div>       
 		        </div>
 
 		        <?php
